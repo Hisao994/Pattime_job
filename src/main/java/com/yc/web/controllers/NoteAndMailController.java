@@ -38,8 +38,7 @@ public class NoteAndMailController {
 	@RequestMapping("sendNote.action")
 	public JsonModel sendNoto(HttpSession session, String Merchant_username) {
 		int random = (int) (Math.random() * 9000 + 1000);
-		log.info("发送验证码");
-		log.info("" + random);
+
 		session.setAttribute("random", random + "");
 		industrySms.execute2(random, Merchant_username);
 		jsonModel.setObj(random + "");

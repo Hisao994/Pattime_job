@@ -50,11 +50,9 @@ public class InitListener implements ServletContextListener {
 	
 			List<Merchant_wantedjob> list=new ArrayList(); 
 			application.setAttribute("rankList", list);
-			log.info(industryList.toString());
 		} catch (Exception e) {
 			e.printStackTrace();
-			log.error("系统初始化错误，详细信息如下：",e);
-			log.error("系统退出，请检查再次部署。。。。。");
+ 
 			System.exit(0);
 		}
 
