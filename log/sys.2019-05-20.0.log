@@ -1,0 +1,565 @@
+2019-05-20 20:52:28,592 INFO (StartupInfoLogger.java:48)- Starting RecruitApplication on SKJ-PC with PID 8884 (E:\javawork\college_parttimejob\target\classes started by SKJ in E:\javawork\college_parttimejob)
+2019-05-20 20:52:28,599 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2019-05-20 20:52:28,600 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-05-20 20:52:32,408 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.JobMapper]: 0.0
+2019-05-20 20:52:32,513 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from job 
+2019-05-20 20:52:32,514 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 20:52:32,528 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 49
+2019-05-20 20:52:32,546 INFO (InitListener.java:53)- [Job [id=1, keycode=行业, parameter=文员助理, fathernode=0], Job [id=2, keycode=行业, parameter=市场推广, fathernode=0], Job [id=3, keycode=行业, parameter=家教培训, fathernode=0], Job [id=4, keycode=行业, parameter=餐饮服务, fathernode=0], Job [id=5, keycode=行业, parameter=店员导购, fathernode=0], Job [id=6, keycode=行业, parameter=物流仓库, fathernode=0], Job [id=7, keycode=行业, parameter=展会演出, fathernode=0], Job [id=8, keycode=行业, parameter=线上兼职, fathernode=0], Job [id=9, keycode=行业, parameter=才艺技能, fathernode=0], Job [id=10, keycode=行业, parameter=客服话务, fathernode=0], Job [id=11, keycode=行业, parameter=其他, fathernode=0], Job [id=12, keycode=职业, parameter=运营助理, fathernode=1], Job [id=13, keycode=职业, parameter=资料录入, fathernode=1], Job [id=14, keycode=职业, parameter=信息标注, fathernode=1], Job [id=15, keycode=职业, parameter=行政/文员, fathernode=1], Job [id=16, keycode=职业, parameter=市场调查, fathernode=2], Job [id=17, keycode=职业, parameter=扫码推广, fathernode=2], Job [id=18, keycode=职业, parameter=派单/拉访, fathernode=2], Job [id=19, keycode=职业, parameter=校园代理, fathernode=2], Job [id=20, keycode=职业, parameter=销售, fathernode=2], Job [id=21, keycode=职业, parameter=促销, fathernode=2], Job [id=22, keycode=职业, parameter=其他推广, fathernode=2], Job [id=23, keycode=职业, parameter=辅导培训, fathernode=3], Job [id=24, keycode=职业, parameter=家教, fathernode=3], Job [id=25, keycode=职业, parameter=助教, fathernode=3], Job [id=26, keycode=职业, parameter=才艺老师, fathernode=3], Job [id=27, keycode=职业, parameter=服务生, fathernode=4], Job [id=28, keycode=职业, parameter=外卖配送, fathernode=4], Job [id=29, keycode=职业, parameter=见习经理, fathernode=4], Job [id=30, keycode=职业, parameter=店员/收银员, fathernode=5], Job [id=31, keycode=职业, parameter=导购, fathernode=5], Job [id=32, keycode=职业, parameter=打包分拣, fathernode=6], Job [id=33, keycode=职业, parameter=物流配送, fathernode=6], Job [id=34, keycode=职业, parameter=活动协助/执行, fathernode=7], Job [id=35, keycode=职业, parameter=节目观众, fathernode=7], Job [id=36, keycode=职业, parameter=社群运营, fathernode=8], Job [id=37, keycode=职业, parameter=信息标注, fathernode=8], Job [id=38, keycode=职业, parameter=资料录入, fathernode=8], Job [id=39, keycode=职业, parameter=在线主播, fathernode=8], Job [id=40, keycode=职业, parameter=线下主播, fathernode=9], Job [id=41, keycode=职业, parameter=美工设计, fathernode=9], Job [id=42, keycode=职业, parameter=资料录入, fathernode=9], Job [id=43, keycode=职业, parameter=在线主播, fathernode=9], Job [id=44, keycode=职业, parameter=客服, fathernode=10], Job [id=45, keycode=职业, parameter=话务员, fathernode=10], Job [id=46, keycode=职业, parameter=新奇兼职, fathernode=11], Job [id=47, keycode=职业, parameter=义工旅行, fathernode=11], Job [id=48, keycode=职业, parameter=志愿者, fathernode=11], Job [id=49, keycode=职业, parameter=体验测评, fathernode=11]]
+2019-05-20 20:52:35,134 INFO (StartupInfoLogger.java:57)- Started RecruitApplication in 6.776 seconds (JVM running for 103703.334)
+2019-05-20 21:04:42,312 INFO (StartupInfoLogger.java:48)- Starting RecruitApplication on SKJ-PC with PID 8884 (E:\javawork\college_parttimejob\target\classes started by SKJ in E:\javawork\college_parttimejob)
+2019-05-20 21:04:42,313 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2019-05-20 21:04:42,313 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-05-20 21:04:45,243 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.JobMapper]: 0.0
+2019-05-20 21:04:45,354 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from job 
+2019-05-20 21:04:45,355 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 21:04:45,365 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 49
+2019-05-20 21:04:45,382 INFO (InitListener.java:53)- [Job [id=1, keycode=行业, parameter=文员助理, fathernode=0], Job [id=2, keycode=行业, parameter=市场推广, fathernode=0], Job [id=3, keycode=行业, parameter=家教培训, fathernode=0], Job [id=4, keycode=行业, parameter=餐饮服务, fathernode=0], Job [id=5, keycode=行业, parameter=店员导购, fathernode=0], Job [id=6, keycode=行业, parameter=物流仓库, fathernode=0], Job [id=7, keycode=行业, parameter=展会演出, fathernode=0], Job [id=8, keycode=行业, parameter=线上兼职, fathernode=0], Job [id=9, keycode=行业, parameter=才艺技能, fathernode=0], Job [id=10, keycode=行业, parameter=客服话务, fathernode=0], Job [id=11, keycode=行业, parameter=其他, fathernode=0], Job [id=12, keycode=职业, parameter=运营助理, fathernode=1], Job [id=13, keycode=职业, parameter=资料录入, fathernode=1], Job [id=14, keycode=职业, parameter=信息标注, fathernode=1], Job [id=15, keycode=职业, parameter=行政/文员, fathernode=1], Job [id=16, keycode=职业, parameter=市场调查, fathernode=2], Job [id=17, keycode=职业, parameter=扫码推广, fathernode=2], Job [id=18, keycode=职业, parameter=派单/拉访, fathernode=2], Job [id=19, keycode=职业, parameter=校园代理, fathernode=2], Job [id=20, keycode=职业, parameter=销售, fathernode=2], Job [id=21, keycode=职业, parameter=促销, fathernode=2], Job [id=22, keycode=职业, parameter=其他推广, fathernode=2], Job [id=23, keycode=职业, parameter=辅导培训, fathernode=3], Job [id=24, keycode=职业, parameter=家教, fathernode=3], Job [id=25, keycode=职业, parameter=助教, fathernode=3], Job [id=26, keycode=职业, parameter=才艺老师, fathernode=3], Job [id=27, keycode=职业, parameter=服务生, fathernode=4], Job [id=28, keycode=职业, parameter=外卖配送, fathernode=4], Job [id=29, keycode=职业, parameter=见习经理, fathernode=4], Job [id=30, keycode=职业, parameter=店员/收银员, fathernode=5], Job [id=31, keycode=职业, parameter=导购, fathernode=5], Job [id=32, keycode=职业, parameter=打包分拣, fathernode=6], Job [id=33, keycode=职业, parameter=物流配送, fathernode=6], Job [id=34, keycode=职业, parameter=活动协助/执行, fathernode=7], Job [id=35, keycode=职业, parameter=节目观众, fathernode=7], Job [id=36, keycode=职业, parameter=社群运营, fathernode=8], Job [id=37, keycode=职业, parameter=信息标注, fathernode=8], Job [id=38, keycode=职业, parameter=资料录入, fathernode=8], Job [id=39, keycode=职业, parameter=在线主播, fathernode=8], Job [id=40, keycode=职业, parameter=线下主播, fathernode=9], Job [id=41, keycode=职业, parameter=美工设计, fathernode=9], Job [id=42, keycode=职业, parameter=资料录入, fathernode=9], Job [id=43, keycode=职业, parameter=在线主播, fathernode=9], Job [id=44, keycode=职业, parameter=客服, fathernode=10], Job [id=45, keycode=职业, parameter=话务员, fathernode=10], Job [id=46, keycode=职业, parameter=新奇兼职, fathernode=11], Job [id=47, keycode=职业, parameter=义工旅行, fathernode=11], Job [id=48, keycode=职业, parameter=志愿者, fathernode=11], Job [id=49, keycode=职业, parameter=体验测评, fathernode=11]]
+2019-05-20 21:04:47,664 INFO (StartupInfoLogger.java:57)- Started RecruitApplication in 5.453 seconds (JVM running for 104435.853)
+2019-05-20 21:05:33,580 INFO (StartupInfoLogger.java:48)- Starting RecruitApplication on SKJ-PC with PID 8884 (E:\javawork\college_parttimejob\target\classes started by SKJ in E:\javawork\college_parttimejob)
+2019-05-20 21:05:33,581 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2019-05-20 21:05:33,582 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-05-20 21:05:36,220 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.JobMapper]: 0.0
+2019-05-20 21:05:36,297 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from job 
+2019-05-20 21:05:36,298 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 21:05:36,305 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 49
+2019-05-20 21:05:36,320 INFO (InitListener.java:53)- [Job [id=1, keycode=行业, parameter=文员助理, fathernode=0], Job [id=2, keycode=行业, parameter=市场推广, fathernode=0], Job [id=3, keycode=行业, parameter=家教培训, fathernode=0], Job [id=4, keycode=行业, parameter=餐饮服务, fathernode=0], Job [id=5, keycode=行业, parameter=店员导购, fathernode=0], Job [id=6, keycode=行业, parameter=物流仓库, fathernode=0], Job [id=7, keycode=行业, parameter=展会演出, fathernode=0], Job [id=8, keycode=行业, parameter=线上兼职, fathernode=0], Job [id=9, keycode=行业, parameter=才艺技能, fathernode=0], Job [id=10, keycode=行业, parameter=客服话务, fathernode=0], Job [id=11, keycode=行业, parameter=其他, fathernode=0], Job [id=12, keycode=职业, parameter=运营助理, fathernode=1], Job [id=13, keycode=职业, parameter=资料录入, fathernode=1], Job [id=14, keycode=职业, parameter=信息标注, fathernode=1], Job [id=15, keycode=职业, parameter=行政/文员, fathernode=1], Job [id=16, keycode=职业, parameter=市场调查, fathernode=2], Job [id=17, keycode=职业, parameter=扫码推广, fathernode=2], Job [id=18, keycode=职业, parameter=派单/拉访, fathernode=2], Job [id=19, keycode=职业, parameter=校园代理, fathernode=2], Job [id=20, keycode=职业, parameter=销售, fathernode=2], Job [id=21, keycode=职业, parameter=促销, fathernode=2], Job [id=22, keycode=职业, parameter=其他推广, fathernode=2], Job [id=23, keycode=职业, parameter=辅导培训, fathernode=3], Job [id=24, keycode=职业, parameter=家教, fathernode=3], Job [id=25, keycode=职业, parameter=助教, fathernode=3], Job [id=26, keycode=职业, parameter=才艺老师, fathernode=3], Job [id=27, keycode=职业, parameter=服务生, fathernode=4], Job [id=28, keycode=职业, parameter=外卖配送, fathernode=4], Job [id=29, keycode=职业, parameter=见习经理, fathernode=4], Job [id=30, keycode=职业, parameter=店员/收银员, fathernode=5], Job [id=31, keycode=职业, parameter=导购, fathernode=5], Job [id=32, keycode=职业, parameter=打包分拣, fathernode=6], Job [id=33, keycode=职业, parameter=物流配送, fathernode=6], Job [id=34, keycode=职业, parameter=活动协助/执行, fathernode=7], Job [id=35, keycode=职业, parameter=节目观众, fathernode=7], Job [id=36, keycode=职业, parameter=社群运营, fathernode=8], Job [id=37, keycode=职业, parameter=信息标注, fathernode=8], Job [id=38, keycode=职业, parameter=资料录入, fathernode=8], Job [id=39, keycode=职业, parameter=在线主播, fathernode=8], Job [id=40, keycode=职业, parameter=线下主播, fathernode=9], Job [id=41, keycode=职业, parameter=美工设计, fathernode=9], Job [id=42, keycode=职业, parameter=资料录入, fathernode=9], Job [id=43, keycode=职业, parameter=在线主播, fathernode=9], Job [id=44, keycode=职业, parameter=客服, fathernode=10], Job [id=45, keycode=职业, parameter=话务员, fathernode=10], Job [id=46, keycode=职业, parameter=新奇兼职, fathernode=11], Job [id=47, keycode=职业, parameter=义工旅行, fathernode=11], Job [id=48, keycode=职业, parameter=志愿者, fathernode=11], Job [id=49, keycode=职业, parameter=体验测评, fathernode=11]]
+2019-05-20 21:05:38,595 INFO (StartupInfoLogger.java:57)- Started RecruitApplication in 5.115 seconds (JVM running for 104486.783)
+2019-05-20 21:09:42,910 INFO (StartupInfoLogger.java:48)- Starting RecruitApplication on SKJ-PC with PID 8884 (E:\javawork\college_parttimejob\target\classes started by SKJ in E:\javawork\college_parttimejob)
+2019-05-20 21:09:42,910 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2019-05-20 21:09:42,910 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-05-20 21:09:45,555 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.JobMapper]: 0.0
+2019-05-20 21:09:45,626 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from job 
+2019-05-20 21:09:45,626 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 21:09:45,632 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 49
+2019-05-20 21:09:45,648 INFO (InitListener.java:53)- [Job [id=1, keycode=行业, parameter=文员助理, fathernode=0], Job [id=2, keycode=行业, parameter=市场推广, fathernode=0], Job [id=3, keycode=行业, parameter=家教培训, fathernode=0], Job [id=4, keycode=行业, parameter=餐饮服务, fathernode=0], Job [id=5, keycode=行业, parameter=店员导购, fathernode=0], Job [id=6, keycode=行业, parameter=物流仓库, fathernode=0], Job [id=7, keycode=行业, parameter=展会演出, fathernode=0], Job [id=8, keycode=行业, parameter=线上兼职, fathernode=0], Job [id=9, keycode=行业, parameter=才艺技能, fathernode=0], Job [id=10, keycode=行业, parameter=客服话务, fathernode=0], Job [id=11, keycode=行业, parameter=其他, fathernode=0], Job [id=12, keycode=职业, parameter=运营助理, fathernode=1], Job [id=13, keycode=职业, parameter=资料录入, fathernode=1], Job [id=14, keycode=职业, parameter=信息标注, fathernode=1], Job [id=15, keycode=职业, parameter=行政/文员, fathernode=1], Job [id=16, keycode=职业, parameter=市场调查, fathernode=2], Job [id=17, keycode=职业, parameter=扫码推广, fathernode=2], Job [id=18, keycode=职业, parameter=派单/拉访, fathernode=2], Job [id=19, keycode=职业, parameter=校园代理, fathernode=2], Job [id=20, keycode=职业, parameter=销售, fathernode=2], Job [id=21, keycode=职业, parameter=促销, fathernode=2], Job [id=22, keycode=职业, parameter=其他推广, fathernode=2], Job [id=23, keycode=职业, parameter=辅导培训, fathernode=3], Job [id=24, keycode=职业, parameter=家教, fathernode=3], Job [id=25, keycode=职业, parameter=助教, fathernode=3], Job [id=26, keycode=职业, parameter=才艺老师, fathernode=3], Job [id=27, keycode=职业, parameter=服务生, fathernode=4], Job [id=28, keycode=职业, parameter=外卖配送, fathernode=4], Job [id=29, keycode=职业, parameter=见习经理, fathernode=4], Job [id=30, keycode=职业, parameter=店员/收银员, fathernode=5], Job [id=31, keycode=职业, parameter=导购, fathernode=5], Job [id=32, keycode=职业, parameter=打包分拣, fathernode=6], Job [id=33, keycode=职业, parameter=物流配送, fathernode=6], Job [id=34, keycode=职业, parameter=活动协助/执行, fathernode=7], Job [id=35, keycode=职业, parameter=节目观众, fathernode=7], Job [id=36, keycode=职业, parameter=社群运营, fathernode=8], Job [id=37, keycode=职业, parameter=信息标注, fathernode=8], Job [id=38, keycode=职业, parameter=资料录入, fathernode=8], Job [id=39, keycode=职业, parameter=在线主播, fathernode=8], Job [id=40, keycode=职业, parameter=线下主播, fathernode=9], Job [id=41, keycode=职业, parameter=美工设计, fathernode=9], Job [id=42, keycode=职业, parameter=资料录入, fathernode=9], Job [id=43, keycode=职业, parameter=在线主播, fathernode=9], Job [id=44, keycode=职业, parameter=客服, fathernode=10], Job [id=45, keycode=职业, parameter=话务员, fathernode=10], Job [id=46, keycode=职业, parameter=新奇兼职, fathernode=11], Job [id=47, keycode=职业, parameter=义工旅行, fathernode=11], Job [id=48, keycode=职业, parameter=志愿者, fathernode=11], Job [id=49, keycode=职业, parameter=体验测评, fathernode=11]]
+2019-05-20 21:09:47,766 INFO (StartupInfoLogger.java:57)- Started RecruitApplication in 4.934 seconds (JVM running for 104735.95)
+2019-05-20 21:12:28,464 INFO (StartupInfoLogger.java:48)- Starting RecruitApplication on SKJ-PC with PID 8884 (E:\javawork\college_parttimejob\target\classes started by SKJ in E:\javawork\college_parttimejob)
+2019-05-20 21:12:28,464 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2019-05-20 21:12:28,465 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-05-20 21:12:31,298 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.JobMapper]: 0.0
+2019-05-20 21:12:31,371 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from job 
+2019-05-20 21:12:31,372 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 21:12:31,379 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 49
+2019-05-20 21:12:31,395 INFO (InitListener.java:53)- [Job [id=1, keycode=行业, parameter=文员助理, fathernode=0], Job [id=2, keycode=行业, parameter=市场推广, fathernode=0], Job [id=3, keycode=行业, parameter=家教培训, fathernode=0], Job [id=4, keycode=行业, parameter=餐饮服务, fathernode=0], Job [id=5, keycode=行业, parameter=店员导购, fathernode=0], Job [id=6, keycode=行业, parameter=物流仓库, fathernode=0], Job [id=7, keycode=行业, parameter=展会演出, fathernode=0], Job [id=8, keycode=行业, parameter=线上兼职, fathernode=0], Job [id=9, keycode=行业, parameter=才艺技能, fathernode=0], Job [id=10, keycode=行业, parameter=客服话务, fathernode=0], Job [id=11, keycode=行业, parameter=其他, fathernode=0], Job [id=12, keycode=职业, parameter=运营助理, fathernode=1], Job [id=13, keycode=职业, parameter=资料录入, fathernode=1], Job [id=14, keycode=职业, parameter=信息标注, fathernode=1], Job [id=15, keycode=职业, parameter=行政/文员, fathernode=1], Job [id=16, keycode=职业, parameter=市场调查, fathernode=2], Job [id=17, keycode=职业, parameter=扫码推广, fathernode=2], Job [id=18, keycode=职业, parameter=派单/拉访, fathernode=2], Job [id=19, keycode=职业, parameter=校园代理, fathernode=2], Job [id=20, keycode=职业, parameter=销售, fathernode=2], Job [id=21, keycode=职业, parameter=促销, fathernode=2], Job [id=22, keycode=职业, parameter=其他推广, fathernode=2], Job [id=23, keycode=职业, parameter=辅导培训, fathernode=3], Job [id=24, keycode=职业, parameter=家教, fathernode=3], Job [id=25, keycode=职业, parameter=助教, fathernode=3], Job [id=26, keycode=职业, parameter=才艺老师, fathernode=3], Job [id=27, keycode=职业, parameter=服务生, fathernode=4], Job [id=28, keycode=职业, parameter=外卖配送, fathernode=4], Job [id=29, keycode=职业, parameter=见习经理, fathernode=4], Job [id=30, keycode=职业, parameter=店员/收银员, fathernode=5], Job [id=31, keycode=职业, parameter=导购, fathernode=5], Job [id=32, keycode=职业, parameter=打包分拣, fathernode=6], Job [id=33, keycode=职业, parameter=物流配送, fathernode=6], Job [id=34, keycode=职业, parameter=活动协助/执行, fathernode=7], Job [id=35, keycode=职业, parameter=节目观众, fathernode=7], Job [id=36, keycode=职业, parameter=社群运营, fathernode=8], Job [id=37, keycode=职业, parameter=信息标注, fathernode=8], Job [id=38, keycode=职业, parameter=资料录入, fathernode=8], Job [id=39, keycode=职业, parameter=在线主播, fathernode=8], Job [id=40, keycode=职业, parameter=线下主播, fathernode=9], Job [id=41, keycode=职业, parameter=美工设计, fathernode=9], Job [id=42, keycode=职业, parameter=资料录入, fathernode=9], Job [id=43, keycode=职业, parameter=在线主播, fathernode=9], Job [id=44, keycode=职业, parameter=客服, fathernode=10], Job [id=45, keycode=职业, parameter=话务员, fathernode=10], Job [id=46, keycode=职业, parameter=新奇兼职, fathernode=11], Job [id=47, keycode=职业, parameter=义工旅行, fathernode=11], Job [id=48, keycode=职业, parameter=志愿者, fathernode=11], Job [id=49, keycode=职业, parameter=体验测评, fathernode=11]]
+2019-05-20 21:12:33,519 INFO (StartupInfoLogger.java:57)- Started RecruitApplication in 5.159 seconds (JVM running for 104901.701)
+2019-05-20 21:12:51,614 INFO (StartupInfoLogger.java:48)- Starting RecruitApplication on SKJ-PC with PID 8884 (E:\javawork\college_parttimejob\target\classes started by SKJ in E:\javawork\college_parttimejob)
+2019-05-20 21:12:51,620 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2019-05-20 21:12:51,620 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-05-20 21:12:53,985 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.JobMapper]: 0.0
+2019-05-20 21:12:54,042 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from job 
+2019-05-20 21:12:54,043 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 21:12:54,050 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 49
+2019-05-20 21:12:54,069 INFO (InitListener.java:53)- [Job [id=1, keycode=行业, parameter=文员助理, fathernode=0], Job [id=2, keycode=行业, parameter=市场推广, fathernode=0], Job [id=3, keycode=行业, parameter=家教培训, fathernode=0], Job [id=4, keycode=行业, parameter=餐饮服务, fathernode=0], Job [id=5, keycode=行业, parameter=店员导购, fathernode=0], Job [id=6, keycode=行业, parameter=物流仓库, fathernode=0], Job [id=7, keycode=行业, parameter=展会演出, fathernode=0], Job [id=8, keycode=行业, parameter=线上兼职, fathernode=0], Job [id=9, keycode=行业, parameter=才艺技能, fathernode=0], Job [id=10, keycode=行业, parameter=客服话务, fathernode=0], Job [id=11, keycode=行业, parameter=其他, fathernode=0], Job [id=12, keycode=职业, parameter=运营助理, fathernode=1], Job [id=13, keycode=职业, parameter=资料录入, fathernode=1], Job [id=14, keycode=职业, parameter=信息标注, fathernode=1], Job [id=15, keycode=职业, parameter=行政/文员, fathernode=1], Job [id=16, keycode=职业, parameter=市场调查, fathernode=2], Job [id=17, keycode=职业, parameter=扫码推广, fathernode=2], Job [id=18, keycode=职业, parameter=派单/拉访, fathernode=2], Job [id=19, keycode=职业, parameter=校园代理, fathernode=2], Job [id=20, keycode=职业, parameter=销售, fathernode=2], Job [id=21, keycode=职业, parameter=促销, fathernode=2], Job [id=22, keycode=职业, parameter=其他推广, fathernode=2], Job [id=23, keycode=职业, parameter=辅导培训, fathernode=3], Job [id=24, keycode=职业, parameter=家教, fathernode=3], Job [id=25, keycode=职业, parameter=助教, fathernode=3], Job [id=26, keycode=职业, parameter=才艺老师, fathernode=3], Job [id=27, keycode=职业, parameter=服务生, fathernode=4], Job [id=28, keycode=职业, parameter=外卖配送, fathernode=4], Job [id=29, keycode=职业, parameter=见习经理, fathernode=4], Job [id=30, keycode=职业, parameter=店员/收银员, fathernode=5], Job [id=31, keycode=职业, parameter=导购, fathernode=5], Job [id=32, keycode=职业, parameter=打包分拣, fathernode=6], Job [id=33, keycode=职业, parameter=物流配送, fathernode=6], Job [id=34, keycode=职业, parameter=活动协助/执行, fathernode=7], Job [id=35, keycode=职业, parameter=节目观众, fathernode=7], Job [id=36, keycode=职业, parameter=社群运营, fathernode=8], Job [id=37, keycode=职业, parameter=信息标注, fathernode=8], Job [id=38, keycode=职业, parameter=资料录入, fathernode=8], Job [id=39, keycode=职业, parameter=在线主播, fathernode=8], Job [id=40, keycode=职业, parameter=线下主播, fathernode=9], Job [id=41, keycode=职业, parameter=美工设计, fathernode=9], Job [id=42, keycode=职业, parameter=资料录入, fathernode=9], Job [id=43, keycode=职业, parameter=在线主播, fathernode=9], Job [id=44, keycode=职业, parameter=客服, fathernode=10], Job [id=45, keycode=职业, parameter=话务员, fathernode=10], Job [id=46, keycode=职业, parameter=新奇兼职, fathernode=11], Job [id=47, keycode=职业, parameter=义工旅行, fathernode=11], Job [id=48, keycode=职业, parameter=志愿者, fathernode=11], Job [id=49, keycode=职业, parameter=体验测评, fathernode=11]]
+2019-05-20 21:12:55,963 INFO (StartupInfoLogger.java:57)- Started RecruitApplication in 4.437 seconds (JVM running for 104924.144)
+2019-05-20 21:14:56,630 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.0
+2019-05-20 21:14:56,631 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob 
+2019-05-20 21:14:56,632 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 21:14:56,638 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 21:14:56,641 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.0
+2019-05-20 21:14:56,642 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob limit ?,? 
+2019-05-20 21:14:56,643 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 21:14:56,646 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 21:15:22,131 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.3333333333333333
+2019-05-20 21:15:22,132 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5
+2019-05-20 21:15:38,865 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6
+2019-05-20 21:15:38,866 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6666666666666666
+2019-05-20 21:15:42,503 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.7142857142857143
+2019-05-20 21:15:42,504 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.75
+2019-05-20 21:15:45,804 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.7777777777777778
+2019-05-20 21:15:45,805 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.8
+2019-05-20 21:15:48,275 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.8181818181818182
+2019-05-20 21:15:48,276 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.8333333333333334
+2019-05-20 21:16:01,401 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.7692307692307693
+2019-05-20 21:16:01,402 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob 
+2019-05-20 21:16:01,403 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 21:16:01,405 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 21:16:01,407 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.7142857142857143
+2019-05-20 21:16:01,407 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob limit ?,? 
+2019-05-20 21:16:01,412 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 21:16:01,421 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 21:16:03,652 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.7333333333333333
+2019-05-20 21:16:03,654 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6875
+2019-05-20 21:16:03,654 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob limit ?,? 
+2019-05-20 21:16:03,655 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer), 3(Integer)
+2019-05-20 21:16:03,656 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 21:16:06,300 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.7058823529411765
+2019-05-20 21:16:06,301 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.7222222222222222
+2019-05-20 21:16:21,095 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.7368421052631579
+2019-05-20 21:16:21,097 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.75
+2019-05-20 21:32:43,803 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.7142857142857143
+2019-05-20 21:32:43,804 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob WHERE workplace like '%北京大学%' 
+2019-05-20 21:32:43,805 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 21:32:43,808 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 21:32:43,812 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6818181818181818
+2019-05-20 21:32:43,813 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%北京大学%' limit ?,? 
+2019-05-20 21:32:43,815 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 21:32:43,817 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 21:33:04,944 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6956521739130435
+2019-05-20 21:33:04,945 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.7083333333333334
+2019-05-20 21:33:07,555 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.68
+2019-05-20 21:33:07,555 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob WHERE workplace like '%317%' 
+2019-05-20 21:33:07,557 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 21:33:07,560 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 21:33:07,562 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6538461538461539
+2019-05-20 21:33:07,562 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%317%' limit ?,? 
+2019-05-20 21:33:07,563 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 21:33:07,567 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 21:34:28,700 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6296296296296297
+2019-05-20 21:34:28,701 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob WHERE workplace like '%317%' 
+2019-05-20 21:34:28,705 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 21:34:28,710 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 21:34:28,712 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6071428571428571
+2019-05-20 21:34:28,712 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%317%' limit ?,? 
+2019-05-20 21:34:28,713 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 21:34:28,726 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 21:34:30,003 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6206896551724138
+2019-05-20 21:34:30,007 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6
+2019-05-20 21:34:30,009 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%317%' order by posttime desc limit ?,? 
+2019-05-20 21:34:30,010 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 21:34:30,015 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 22:37:50,445 INFO (StartupInfoLogger.java:48)- Starting RecruitApplication on SKJ-PC with PID 8884 (E:\javawork\college_parttimejob\target\classes started by SKJ in E:\javawork\college_parttimejob)
+2019-05-20 22:37:50,446 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2019-05-20 22:37:50,446 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-05-20 22:37:52,732 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.JobMapper]: 0.0
+2019-05-20 22:37:52,820 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from job 
+2019-05-20 22:37:52,821 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 22:37:52,838 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 49
+2019-05-20 22:37:52,873 INFO (InitListener.java:53)- [Job [id=1, keycode=行业, parameter=文员助理, fathernode=0], Job [id=2, keycode=行业, parameter=市场推广, fathernode=0], Job [id=3, keycode=行业, parameter=家教培训, fathernode=0], Job [id=4, keycode=行业, parameter=餐饮服务, fathernode=0], Job [id=5, keycode=行业, parameter=店员导购, fathernode=0], Job [id=6, keycode=行业, parameter=物流仓库, fathernode=0], Job [id=7, keycode=行业, parameter=展会演出, fathernode=0], Job [id=8, keycode=行业, parameter=线上兼职, fathernode=0], Job [id=9, keycode=行业, parameter=才艺技能, fathernode=0], Job [id=10, keycode=行业, parameter=客服话务, fathernode=0], Job [id=11, keycode=行业, parameter=其他, fathernode=0], Job [id=12, keycode=职业, parameter=运营助理, fathernode=1], Job [id=13, keycode=职业, parameter=资料录入, fathernode=1], Job [id=14, keycode=职业, parameter=信息标注, fathernode=1], Job [id=15, keycode=职业, parameter=行政/文员, fathernode=1], Job [id=16, keycode=职业, parameter=市场调查, fathernode=2], Job [id=17, keycode=职业, parameter=扫码推广, fathernode=2], Job [id=18, keycode=职业, parameter=派单/拉访, fathernode=2], Job [id=19, keycode=职业, parameter=校园代理, fathernode=2], Job [id=20, keycode=职业, parameter=销售, fathernode=2], Job [id=21, keycode=职业, parameter=促销, fathernode=2], Job [id=22, keycode=职业, parameter=其他推广, fathernode=2], Job [id=23, keycode=职业, parameter=辅导培训, fathernode=3], Job [id=24, keycode=职业, parameter=家教, fathernode=3], Job [id=25, keycode=职业, parameter=助教, fathernode=3], Job [id=26, keycode=职业, parameter=才艺老师, fathernode=3], Job [id=27, keycode=职业, parameter=服务生, fathernode=4], Job [id=28, keycode=职业, parameter=外卖配送, fathernode=4], Job [id=29, keycode=职业, parameter=见习经理, fathernode=4], Job [id=30, keycode=职业, parameter=店员/收银员, fathernode=5], Job [id=31, keycode=职业, parameter=导购, fathernode=5], Job [id=32, keycode=职业, parameter=打包分拣, fathernode=6], Job [id=33, keycode=职业, parameter=物流配送, fathernode=6], Job [id=34, keycode=职业, parameter=活动协助/执行, fathernode=7], Job [id=35, keycode=职业, parameter=节目观众, fathernode=7], Job [id=36, keycode=职业, parameter=社群运营, fathernode=8], Job [id=37, keycode=职业, parameter=信息标注, fathernode=8], Job [id=38, keycode=职业, parameter=资料录入, fathernode=8], Job [id=39, keycode=职业, parameter=在线主播, fathernode=8], Job [id=40, keycode=职业, parameter=线下主播, fathernode=9], Job [id=41, keycode=职业, parameter=美工设计, fathernode=9], Job [id=42, keycode=职业, parameter=资料录入, fathernode=9], Job [id=43, keycode=职业, parameter=在线主播, fathernode=9], Job [id=44, keycode=职业, parameter=客服, fathernode=10], Job [id=45, keycode=职业, parameter=话务员, fathernode=10], Job [id=46, keycode=职业, parameter=新奇兼职, fathernode=11], Job [id=47, keycode=职业, parameter=义工旅行, fathernode=11], Job [id=48, keycode=职业, parameter=志愿者, fathernode=11], Job [id=49, keycode=职业, parameter=体验测评, fathernode=11]]
+2019-05-20 22:37:54,980 INFO (StartupInfoLogger.java:57)- Started RecruitApplication in 4.617 seconds (JVM running for 110023.036)
+2019-05-20 22:41:13,666 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_baseinfoMapper]: 0.0
+2019-05-20 22:41:13,666 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_baseinfo where merchant_username=? 
+2019-05-20 22:41:13,667 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 18373472373(String)
+2019-05-20 22:41:13,693 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 22:41:13,695 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_baseinfoMapper]: 0.0
+2019-05-20 22:41:13,695 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_baseinfo where merchant_username=? and merchant_password=? 
+2019-05-20 22:41:13,696 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 18373472373(String), ce7675d0d7c06d17fdd54684e645318c0f26f3a1(String)
+2019-05-20 22:41:13,698 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 22:41:15,707 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.0
+2019-05-20 22:41:15,708 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob 
+2019-05-20 22:41:15,708 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 22:41:15,711 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 22:41:15,713 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.0
+2019-05-20 22:41:15,714 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob limit ?,? 
+2019-05-20 22:41:15,714 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 22:41:15,724 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 22:43:55,132 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into merchant_wantedjob(merchant_id,salary,job_id,title, workplace,workdescp,workcleanform,workdemand,workcontent,posttime,power) values(?,?,?,?,?,?,?,?,?,date_format(now(),'%Y-%c-%e %k:%i'),1) 
+2019-05-20 22:43:55,135 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 2000.0(Double), 28(Integer), 答辩(String), 18_200_湖南工学院(String), 毕业论文(String), 完工结(String), 1：大学生
+2：会答辩(String),  计算机专业(String)
+2019-05-20 22:43:55,137 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-05-20 22:44:01,108 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.0
+2019-05-20 22:44:01,109 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob 
+2019-05-20 22:44:01,109 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 22:44:01,111 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 22:44:01,113 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.0
+2019-05-20 22:44:01,113 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob limit ?,? 
+2019-05-20 22:44:01,114 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 22:44:01,118 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 22:44:23,988 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.2
+2019-05-20 22:44:23,989 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.3333333333333333
+2019-05-20 22:44:39,030 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.2857142857142857
+2019-05-20 22:44:39,031 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob WHERE workplace like '%北京大学%' 
+2019-05-20 22:44:39,032 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 22:44:39,035 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 22:44:39,036 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.25
+2019-05-20 22:44:39,037 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%北京大学%' limit ?,? 
+2019-05-20 22:44:39,039 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 22:44:39,042 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 22:44:43,018 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.3333333333333333
+2019-05-20 22:44:43,019 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.4
+2019-05-20 22:44:50,020 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.45454545454545453
+2019-05-20 22:44:50,022 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5
+2019-05-20 22:44:55,149 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.46153846153846156
+2019-05-20 22:44:55,150 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob WHERE workplace like '%北京大学%' 
+2019-05-20 22:44:55,151 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 22:44:55,155 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 22:44:55,156 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.42857142857142855
+2019-05-20 22:44:55,157 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%北京大学%' limit ?,? 
+2019-05-20 22:44:55,157 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer), 3(Integer)
+2019-05-20 22:44:55,159 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 22:44:57,857 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.4666666666666667
+2019-05-20 22:44:57,858 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.4375
+2019-05-20 22:44:57,858 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%北京大学%' limit ?,? 
+2019-05-20 22:44:57,859 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 22:44:57,860 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 22:45:02,099 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.47058823529411764
+2019-05-20 22:45:02,100 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5
+2019-05-20 22:45:05,577 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5263157894736842
+2019-05-20 22:45:05,579 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.55
+2019-05-20 22:45:32,011 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5238095238095238
+2019-05-20 22:45:32,012 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob 
+2019-05-20 22:45:32,013 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 22:45:32,015 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 22:45:32,017 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5
+2019-05-20 22:45:32,019 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob limit ?,? 
+2019-05-20 22:45:32,020 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 22:45:32,035 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 22:45:50,889 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_baseinfoMapper]: 0.0
+2019-05-20 22:45:50,891 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_baseinfo where merchant_username=? 
+2019-05-20 22:45:50,892 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 18373472373(String)
+2019-05-20 22:45:50,895 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 22:45:50,896 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_baseinfoMapper]: 0.0
+2019-05-20 22:45:50,897 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_baseinfo where merchant_username=? and merchant_password=? 
+2019-05-20 22:45:50,897 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 18373472373(String), ce7675d0d7c06d17fdd54684e645318c0f26f3a1(String)
+2019-05-20 22:45:50,899 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 22:45:52,465 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5217391304347826
+2019-05-20 22:45:52,466 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5416666666666666
+2019-05-20 22:46:00,595 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.52
+2019-05-20 22:46:00,596 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob WHERE workplace like '%北京大学%' 
+2019-05-20 22:46:00,598 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 22:46:00,603 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 22:46:00,604 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5
+2019-05-20 22:46:00,606 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%北京大学%' limit ?,? 
+2019-05-20 22:46:00,608 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 22:46:00,613 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 22:46:03,488 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5185185185185185
+2019-05-20 22:46:03,490 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5
+2019-05-20 22:46:03,491 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%北京大学%' limit ?,? 
+2019-05-20 22:46:03,492 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer), 3(Integer)
+2019-05-20 22:46:03,495 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 22:46:06,257 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5172413793103449
+2019-05-20 22:46:06,258 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5333333333333333
+2019-05-20 22:46:08,533 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5483870967741935
+2019-05-20 22:46:08,534 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5625
+2019-05-20 22:46:09,797 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5757575757575758
+2019-05-20 22:46:09,800 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5882352941176471
+2019-05-20 22:47:06,890 INFO (StartupInfoLogger.java:48)- Starting RecruitApplication on SKJ-PC with PID 8884 (E:\javawork\college_parttimejob\target\classes started by SKJ in E:\javawork\college_parttimejob)
+2019-05-20 22:47:06,891 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2019-05-20 22:47:06,891 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-05-20 22:47:08,604 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.JobMapper]: 0.0
+2019-05-20 22:47:08,668 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from job 
+2019-05-20 22:47:08,669 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 22:47:08,674 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 49
+2019-05-20 22:47:08,694 INFO (InitListener.java:53)- [Job [id=1, keycode=行业, parameter=文员助理, fathernode=0], Job [id=2, keycode=行业, parameter=市场推广, fathernode=0], Job [id=3, keycode=行业, parameter=家教培训, fathernode=0], Job [id=4, keycode=行业, parameter=餐饮服务, fathernode=0], Job [id=5, keycode=行业, parameter=店员导购, fathernode=0], Job [id=6, keycode=行业, parameter=物流仓库, fathernode=0], Job [id=7, keycode=行业, parameter=展会演出, fathernode=0], Job [id=8, keycode=行业, parameter=线上兼职, fathernode=0], Job [id=9, keycode=行业, parameter=才艺技能, fathernode=0], Job [id=10, keycode=行业, parameter=客服话务, fathernode=0], Job [id=11, keycode=行业, parameter=其他, fathernode=0], Job [id=12, keycode=职业, parameter=运营助理, fathernode=1], Job [id=13, keycode=职业, parameter=资料录入, fathernode=1], Job [id=14, keycode=职业, parameter=信息标注, fathernode=1], Job [id=15, keycode=职业, parameter=行政/文员, fathernode=1], Job [id=16, keycode=职业, parameter=市场调查, fathernode=2], Job [id=17, keycode=职业, parameter=扫码推广, fathernode=2], Job [id=18, keycode=职业, parameter=派单/拉访, fathernode=2], Job [id=19, keycode=职业, parameter=校园代理, fathernode=2], Job [id=20, keycode=职业, parameter=销售, fathernode=2], Job [id=21, keycode=职业, parameter=促销, fathernode=2], Job [id=22, keycode=职业, parameter=其他推广, fathernode=2], Job [id=23, keycode=职业, parameter=辅导培训, fathernode=3], Job [id=24, keycode=职业, parameter=家教, fathernode=3], Job [id=25, keycode=职业, parameter=助教, fathernode=3], Job [id=26, keycode=职业, parameter=才艺老师, fathernode=3], Job [id=27, keycode=职业, parameter=服务生, fathernode=4], Job [id=28, keycode=职业, parameter=外卖配送, fathernode=4], Job [id=29, keycode=职业, parameter=见习经理, fathernode=4], Job [id=30, keycode=职业, parameter=店员/收银员, fathernode=5], Job [id=31, keycode=职业, parameter=导购, fathernode=5], Job [id=32, keycode=职业, parameter=打包分拣, fathernode=6], Job [id=33, keycode=职业, parameter=物流配送, fathernode=6], Job [id=34, keycode=职业, parameter=活动协助/执行, fathernode=7], Job [id=35, keycode=职业, parameter=节目观众, fathernode=7], Job [id=36, keycode=职业, parameter=社群运营, fathernode=8], Job [id=37, keycode=职业, parameter=信息标注, fathernode=8], Job [id=38, keycode=职业, parameter=资料录入, fathernode=8], Job [id=39, keycode=职业, parameter=在线主播, fathernode=8], Job [id=40, keycode=职业, parameter=线下主播, fathernode=9], Job [id=41, keycode=职业, parameter=美工设计, fathernode=9], Job [id=42, keycode=职业, parameter=资料录入, fathernode=9], Job [id=43, keycode=职业, parameter=在线主播, fathernode=9], Job [id=44, keycode=职业, parameter=客服, fathernode=10], Job [id=45, keycode=职业, parameter=话务员, fathernode=10], Job [id=46, keycode=职业, parameter=新奇兼职, fathernode=11], Job [id=47, keycode=职业, parameter=义工旅行, fathernode=11], Job [id=48, keycode=职业, parameter=志愿者, fathernode=11], Job [id=49, keycode=职业, parameter=体验测评, fathernode=11]]
+2019-05-20 22:47:10,437 INFO (StartupInfoLogger.java:57)- Started RecruitApplication in 3.615 seconds (JVM running for 110578.479)
+2019-05-20 22:48:07,790 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.0
+2019-05-20 22:48:07,791 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob WHERE workplace like '%湖南工学院%' 
+2019-05-20 22:48:07,791 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 22:48:07,793 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 22:48:07,794 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.0
+2019-05-20 22:48:07,794 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%湖南工学院%' limit ?,? 
+2019-05-20 22:48:07,794 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer), 3(Integer)
+2019-05-20 22:48:07,801 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-20 22:48:09,072 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.0
+2019-05-20 22:48:09,073 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob WHERE workplace like '%湖南工学院%' 
+2019-05-20 22:48:09,074 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 22:48:09,079 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 22:48:09,081 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.0
+2019-05-20 22:48:09,082 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%湖南工学院%' limit ?,? 
+2019-05-20 22:48:09,083 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer), 3(Integer)
+2019-05-20 22:48:09,087 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-20 22:48:12,257 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.2
+2019-05-20 22:48:12,258 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.3333333333333333
+2019-05-20 22:48:16,265 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.42857142857142855
+2019-05-20 22:48:16,268 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5
+2019-05-20 22:48:17,777 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.4444444444444444
+2019-05-20 22:48:17,778 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob WHERE workplace like '%200%' 
+2019-05-20 22:48:17,779 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 22:48:17,782 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 22:48:17,784 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.4
+2019-05-20 22:48:17,785 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%200%' limit ?,? 
+2019-05-20 22:48:17,786 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer), 3(Integer)
+2019-05-20 22:48:17,789 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-20 22:48:18,545 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.45454545454545453
+2019-05-20 22:48:18,546 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.4166666666666667
+2019-05-20 22:48:18,547 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%200%' order by posttime desc limit ?,? 
+2019-05-20 22:48:18,548 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer), 3(Integer)
+2019-05-20 22:48:18,552 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-20 22:48:22,050 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.46153846153846156
+2019-05-20 22:48:22,052 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.42857142857142855
+2019-05-20 22:48:22,053 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%湖南工学院%' order by posttime desc limit ?,? 
+2019-05-20 22:48:22,054 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer), 3(Integer)
+2019-05-20 22:48:22,057 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-20 22:52:00,767 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.4
+2019-05-20 22:52:00,768 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob WHERE workplace like '%湖南工学院%' 
+2019-05-20 22:52:00,769 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 22:52:00,772 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 22:52:00,773 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.375
+2019-05-20 22:52:00,775 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%湖南工学院%' order by salary desc limit ?,? 
+2019-05-20 22:52:00,776 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer), 3(Integer)
+2019-05-20 22:52:00,779 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-20 22:52:01,824 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.4117647058823529
+2019-05-20 22:52:01,826 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.4444444444444444
+2019-05-20 22:52:09,386 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.42105263157894735
+2019-05-20 22:52:09,387 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob 
+2019-05-20 22:52:09,388 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 22:52:09,391 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 22:52:09,392 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.4
+2019-05-20 22:52:09,393 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob limit ?,? 
+2019-05-20 22:52:09,393 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 22:52:09,396 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 22:52:11,538 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.38095238095238093
+2019-05-20 22:52:11,540 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob WHERE workplace like '%北京大学%' 
+2019-05-20 22:52:11,540 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 22:52:11,543 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 22:52:11,545 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.36363636363636365
+2019-05-20 22:52:11,545 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%北京大学%' limit ?,? 
+2019-05-20 22:52:11,546 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 22:52:11,557 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 22:52:17,936 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.34782608695652173
+2019-05-20 22:52:17,937 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob WHERE workplace like '%317%' 
+2019-05-20 22:52:17,941 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 22:52:17,944 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 22:52:17,946 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.3333333333333333
+2019-05-20 22:52:17,947 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%317%' limit ?,? 
+2019-05-20 22:52:17,948 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 22:52:17,952 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 22:52:21,010 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.36
+2019-05-20 22:52:21,012 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.38461538461538464
+2019-05-20 22:54:26,781 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.37037037037037035
+2019-05-20 22:54:26,782 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob 
+2019-05-20 22:54:26,783 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 22:54:26,788 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 22:54:26,790 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.35714285714285715
+2019-05-20 22:54:26,790 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob limit ?,? 
+2019-05-20 22:54:26,791 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 22:54:26,794 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 22:54:28,434 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.3793103448275862
+2019-05-20 22:54:28,435 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.4
+2019-05-20 22:54:49,748 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.41935483870967744
+2019-05-20 22:54:49,749 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.4375
+2019-05-20 23:02:30,780 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.42424242424242425
+2019-05-20 23:02:30,782 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob 
+2019-05-20 23:02:30,783 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 23:02:30,785 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:02:30,786 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.4117647058823529
+2019-05-20 23:02:30,787 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob limit ?,? 
+2019-05-20 23:02:30,788 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 23:02:30,792 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 23:02:38,431 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.42857142857142855
+2019-05-20 23:02:38,433 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.4444444444444444
+2019-05-20 23:02:39,737 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.4594594594594595
+2019-05-20 23:02:39,738 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.47368421052631576
+2019-05-20 23:02:40,568 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.48717948717948717
+2019-05-20 23:02:40,569 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5
+2019-05-20 23:02:41,119 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5121951219512195
+2019-05-20 23:02:41,120 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5238095238095238
+2019-05-20 23:02:41,319 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5348837209302325
+2019-05-20 23:02:41,321 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5454545454545454
+2019-05-20 23:02:41,527 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5555555555555556
+2019-05-20 23:02:41,528 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5652173913043478
+2019-05-20 23:02:41,753 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.574468085106383
+2019-05-20 23:02:41,754 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5833333333333334
+2019-05-20 23:02:41,922 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5918367346938775
+2019-05-20 23:02:41,923 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6
+2019-05-20 23:02:42,119 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6078431372549019
+2019-05-20 23:02:42,121 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6153846153846154
+2019-05-20 23:02:42,575 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6226415094339622
+2019-05-20 23:02:42,576 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6296296296296297
+2019-05-20 23:02:43,163 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6363636363636364
+2019-05-20 23:02:43,170 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6428571428571429
+2019-05-20 23:02:43,720 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6491228070175439
+2019-05-20 23:02:43,723 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6551724137931034
+2019-05-20 23:02:44,234 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6610169491525424
+2019-05-20 23:02:44,234 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6666666666666666
+2019-05-20 23:02:44,833 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6721311475409836
+2019-05-20 23:02:44,834 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6774193548387096
+2019-05-20 23:02:45,336 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6825396825396826
+2019-05-20 23:02:45,337 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6875
+2019-05-20 23:02:45,566 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6923076923076923
+2019-05-20 23:02:45,569 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.696969696969697
+2019-05-20 23:02:45,813 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.7014925373134329
+2019-05-20 23:02:45,815 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.7058823529411765
+2019-05-20 23:02:49,938 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.7101449275362319
+2019-05-20 23:02:49,939 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.7142857142857143
+2019-05-20 23:02:50,560 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.7183098591549296
+2019-05-20 23:02:50,561 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.7083333333333334
+2019-05-20 23:02:50,562 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob order by posttime desc limit ?,? 
+2019-05-20 23:02:50,563 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 23:02:50,573 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 23:03:28,833 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.7123287671232876
+2019-05-20 23:03:28,835 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.7162162162162162
+2019-05-20 23:07:41,611 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.7066666666666667
+2019-05-20 23:07:41,613 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob 
+2019-05-20 23:07:41,614 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 23:07:41,630 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:07:41,633 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6973684210526315
+2019-05-20 23:07:41,634 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob limit ?,? 
+2019-05-20 23:07:41,635 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 23:07:41,637 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 23:07:44,156 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.7012987012987013
+2019-05-20 23:07:44,156 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.7051282051282052
+2019-05-20 23:11:29,416 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6962025316455697
+2019-05-20 23:11:29,417 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob WHERE workplace like '%热门兼职%' and job_id=? 
+2019-05-20 23:11:29,417 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13(Integer)
+2019-05-20 23:11:29,419 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:11:29,419 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6875
+2019-05-20 23:11:29,420 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%热门兼职%' and job_id=? limit ?,? 
+2019-05-20 23:11:29,420 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13(Integer), 0(Integer), 3(Integer)
+2019-05-20 23:11:29,423 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-20 23:11:30,469 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6790123456790124
+2019-05-20 23:11:30,470 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob WHERE workplace like '%热门兼职%' and job_id=? 
+2019-05-20 23:11:30,471 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(Integer)
+2019-05-20 23:11:30,474 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:11:30,475 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6707317073170732
+2019-05-20 23:11:30,476 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%热门兼职%' and job_id=? limit ?,? 
+2019-05-20 23:11:30,477 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(Integer), 0(Integer), 3(Integer)
+2019-05-20 23:11:30,478 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-20 23:11:31,416 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6626506024096386
+2019-05-20 23:11:31,418 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob 
+2019-05-20 23:11:31,419 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 23:11:31,424 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:11:31,425 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6547619047619048
+2019-05-20 23:11:31,425 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob limit ?,? 
+2019-05-20 23:11:31,426 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 23:11:31,428 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 23:14:25,849 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6470588235294118
+2019-05-20 23:14:25,849 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob WHERE job_id=? 
+2019-05-20 23:14:25,850 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(Integer)
+2019-05-20 23:14:25,852 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:14:25,853 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6395348837209303
+2019-05-20 23:14:25,853 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE job_id=? limit ?,? 
+2019-05-20 23:14:25,853 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(Integer), 0(Integer), 3(Integer)
+2019-05-20 23:14:25,856 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:19:20,338 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.632183908045977
+2019-05-20 23:19:20,338 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob WHERE workplace like '%北京大学%' 
+2019-05-20 23:19:20,339 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 23:19:20,340 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:19:20,341 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.625
+2019-05-20 23:19:20,342 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%北京大学%' limit ?,? 
+2019-05-20 23:19:20,342 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 23:19:20,344 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 23:19:21,397 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6292134831460674
+2019-05-20 23:19:21,400 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6333333333333333
+2019-05-20 23:31:15,922 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6263736263736264
+2019-05-20 23:31:15,923 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob WHERE workcleanform like '%日结%' and workplace like '%北京大学%' 
+2019-05-20 23:31:15,924 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 23:31:15,926 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:31:15,927 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6195652173913043
+2019-05-20 23:31:15,927 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workcleanform like '%日结%' and workplace like '%北京大学%' limit ?,? 
+2019-05-20 23:31:15,928 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 23:31:15,930 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 23:31:18,323 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6129032258064516
+2019-05-20 23:31:18,324 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob WHERE workplace like '%北京大学%' 
+2019-05-20 23:31:18,325 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 23:31:18,328 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:31:18,329 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6063829787234043
+2019-05-20 23:31:18,330 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%北京大学%' limit ?,? 
+2019-05-20 23:31:18,331 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 23:31:18,335 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 23:31:20,739 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.6
+2019-05-20 23:31:20,740 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob WHERE workcleanform like '%周结%' and workplace like '%北京大学%' 
+2019-05-20 23:31:20,742 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 23:31:20,752 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:31:20,753 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.59375
+2019-05-20 23:31:20,753 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workcleanform like '%周结%' and workplace like '%北京大学%' limit ?,? 
+2019-05-20 23:31:20,754 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 23:31:20,760 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-20 23:31:24,492 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5876288659793815
+2019-05-20 23:31:24,493 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob WHERE workcleanform like '%完工结算%' and workplace like '%北京大学%' 
+2019-05-20 23:31:24,494 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 23:31:24,496 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:31:24,496 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5816326530612245
+2019-05-20 23:31:24,497 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workcleanform like '%完工结算%' and workplace like '%北京大学%' limit ?,? 
+2019-05-20 23:31:24,497 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 23:31:24,498 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-20 23:35:00,057 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5757575757575758
+2019-05-20 23:35:00,058 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob 
+2019-05-20 23:35:00,059 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 23:35:00,060 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:35:00,062 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.57
+2019-05-20 23:35:00,062 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob limit ?,? 
+2019-05-20 23:35:00,063 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 23:35:00,070 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 23:35:01,931 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5742574257425742
+2019-05-20 23:35:01,933 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5784313725490197
+2019-05-20 23:35:03,946 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5728155339805825
+2019-05-20 23:35:03,947 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob WHERE workplace like '%317%' 
+2019-05-20 23:35:03,947 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 23:35:03,949 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:35:03,950 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5673076923076923
+2019-05-20 23:35:03,951 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%317%' limit ?,? 
+2019-05-20 23:35:03,951 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 23:35:03,953 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 23:35:08,760 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5714285714285714
+2019-05-20 23:35:08,762 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5754716981132075
+2019-05-20 23:35:12,878 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5794392523364486
+2019-05-20 23:35:12,880 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5833333333333334
+2019-05-20 23:38:29,737 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5779816513761468
+2019-05-20 23:38:29,738 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob 
+2019-05-20 23:38:29,739 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 23:38:29,741 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:38:29,742 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5727272727272728
+2019-05-20 23:38:29,742 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob limit ?,? 
+2019-05-20 23:38:29,743 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 23:38:29,745 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 23:38:33,641 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5765765765765766
+2019-05-20 23:38:33,642 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5803571428571429
+2019-05-20 23:38:34,823 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5752212389380531
+2019-05-20 23:38:34,824 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob WHERE workplace like '%不限%' 
+2019-05-20 23:38:34,825 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 23:38:34,827 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:38:34,829 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5701754385964912
+2019-05-20 23:38:34,830 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob WHERE workplace like '%不限%' limit ?,? 
+2019-05-20 23:38:34,831 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 23:38:34,834 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-20 23:39:58,156 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5652173913043478
+2019-05-20 23:39:58,157 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob 
+2019-05-20 23:39:58,157 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 23:39:58,159 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:39:58,160 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5603448275862069
+2019-05-20 23:39:58,161 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob limit ?,? 
+2019-05-20 23:39:58,161 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 23:39:58,171 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 23:40:00,504 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5641025641025641
+2019-05-20 23:40:00,505 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5677966101694916
+2019-05-20 23:40:21,692 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5714285714285714
+2019-05-20 23:40:21,693 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.575
+2019-05-20 23:40:22,778 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5785123966942148
+2019-05-20 23:40:22,779 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5819672131147541
+2019-05-20 23:40:23,830 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5853658536585366
+2019-05-20 23:40:23,831 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5887096774193549
+2019-05-20 23:44:53,444 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.584
+2019-05-20 23:44:53,445 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob 
+2019-05-20 23:44:53,446 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 23:44:53,450 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:44:53,451 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5793650793650794
+2019-05-20 23:44:53,452 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob limit ?,? 
+2019-05-20 23:44:53,453 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 23:44:53,455 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 23:46:25,654 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5748031496062992
+2019-05-20 23:46:25,654 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob 
+2019-05-20 23:46:25,655 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 23:46:25,657 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:46:25,658 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5703125
+2019-05-20 23:46:25,659 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob limit ?,? 
+2019-05-20 23:46:25,660 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 23:46:25,663 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 23:48:32,403 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5658914728682171
+2019-05-20 23:48:32,405 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob 
+2019-05-20 23:48:32,405 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 23:48:32,408 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:48:32,409 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5615384615384615
+2019-05-20 23:48:32,409 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob limit ?,? 
+2019-05-20 23:48:32,410 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 23:48:32,413 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 23:50:45,675 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5572519083969466
+2019-05-20 23:50:45,676 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob 
+2019-05-20 23:50:45,677 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 23:50:45,678 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:50:45,679 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.553030303030303
+2019-05-20 23:50:45,680 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob limit ?,? 
+2019-05-20 23:50:45,681 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 23:50:45,684 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 23:51:30,923 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.556390977443609
+2019-05-20 23:51:30,923 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5597014925373134
+2019-05-20 23:51:42,760 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.562962962962963
+2019-05-20 23:51:42,761 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5661764705882353
+2019-05-20 23:52:13,346 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5620437956204379
+2019-05-20 23:52:13,347 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob 
+2019-05-20 23:52:13,348 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 23:52:13,350 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:52:13,351 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5579710144927537
+2019-05-20 23:52:13,352 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob limit ?,? 
+2019-05-20 23:52:13,353 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 23:52:13,360 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 23:53:31,390 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5539568345323741
+2019-05-20 23:53:31,391 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob 
+2019-05-20 23:53:31,391 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-20 23:53:31,394 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-20 23:53:31,395 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.55
+2019-05-20 23:53:31,396 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob limit ?,? 
+2019-05-20 23:53:31,397 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 3(Integer)
+2019-05-20 23:53:31,399 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-20 23:54:10,475 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5531914893617021
+2019-05-20 23:54:10,476 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5563380281690141

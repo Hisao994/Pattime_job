@@ -1,0 +1,90 @@
+2018-11-13 17:25:36,900 INFO (StartupInfoLogger.java:48)- Starting RecruitApplication on skj-PC with PID 58548 (E:\javawork\college_parttimejob\target\classes started by skj in E:\javawork\college_parttimejob)
+2018-11-13 17:25:36,910 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2018-11-13 17:25:36,916 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2018-11-13 17:25:52,230 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.JobMapper]: 0.0
+2018-11-13 17:25:52,865 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from job 
+2018-11-13 17:25:52,910 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-11-13 17:25:53,137 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 49
+2018-11-13 17:25:54,838 ERROR (InitListener.java:55)- 系统初始化错误，详细信息如下：
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:204)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:348)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:129)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:92)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:79)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:194)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91)
+	at org.springframework.data.redis.core.DefaultZSetOperations.reverseRangeWithScores(DefaultZSetOperations.java:137)
+	at com.yc.dao.impl.RedisDaoImpl.rank(RedisDaoImpl.java:81)
+	at com.yc.dao.impl.RedisDaoImpl$$FastClassBySpringCGLIB$$19274492.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.yc.dao.impl.RedisDaoImpl$$EnhancerBySpringCGLIB$$65df42c9.rank(<generated>)
+	at com.yc.web.listeners.InitListener.contextInitialized(InitListener.java:45)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4743)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5207)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1419)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1409)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:16)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:194)
+	... 27 common frames omitted
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 30 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 37 common frames omitted
+2018-11-13 17:25:54,839 ERROR (InitListener.java:56)- 系统退出，请检查再次部署。。。。。
+2018-11-13 17:28:39,224 INFO (StartupInfoLogger.java:48)- Starting RecruitApplication on skj-PC with PID 82088 (E:\javawork\college_parttimejob\target\classes started by skj in E:\javawork\college_parttimejob)
+2018-11-13 17:28:39,226 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2018-11-13 17:28:39,232 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2018-11-13 17:28:49,291 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.JobMapper]: 0.0
+2018-11-13 17:28:49,889 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from job 
+2018-11-13 17:28:49,935 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-11-13 17:28:49,962 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 49
+2018-11-13 17:28:50,162 INFO (InitListener.java:52)- [Job [id=1, keycode=行业, parameter=文员助理, fathernode=0], Job [id=2, keycode=行业, parameter=市场推广, fathernode=0], Job [id=3, keycode=行业, parameter=家教培训, fathernode=0], Job [id=4, keycode=行业, parameter=餐饮服务, fathernode=0], Job [id=5, keycode=行业, parameter=店员导购, fathernode=0], Job [id=6, keycode=行业, parameter=物流仓库, fathernode=0], Job [id=7, keycode=行业, parameter=展会演出, fathernode=0], Job [id=8, keycode=行业, parameter=线上兼职, fathernode=0], Job [id=9, keycode=行业, parameter=才艺技能, fathernode=0], Job [id=10, keycode=行业, parameter=客服话务, fathernode=0], Job [id=11, keycode=行业, parameter=其他, fathernode=0], Job [id=12, keycode=职业, parameter=运营助理, fathernode=1], Job [id=13, keycode=职业, parameter=资料录入, fathernode=1], Job [id=14, keycode=职业, parameter=信息标注, fathernode=1], Job [id=15, keycode=职业, parameter=行政/文员, fathernode=1], Job [id=16, keycode=职业, parameter=市场调查, fathernode=2], Job [id=17, keycode=职业, parameter=扫码推广, fathernode=2], Job [id=18, keycode=职业, parameter=派单/拉访, fathernode=2], Job [id=19, keycode=职业, parameter=校园代理, fathernode=2], Job [id=20, keycode=职业, parameter=销售, fathernode=2], Job [id=21, keycode=职业, parameter=促销, fathernode=2], Job [id=22, keycode=职业, parameter=其他推广, fathernode=2], Job [id=23, keycode=职业, parameter=辅导培训, fathernode=3], Job [id=24, keycode=职业, parameter=家教, fathernode=3], Job [id=25, keycode=职业, parameter=助教, fathernode=3], Job [id=26, keycode=职业, parameter=才艺老师, fathernode=3], Job [id=27, keycode=职业, parameter=服务生, fathernode=4], Job [id=28, keycode=职业, parameter=外卖配送, fathernode=4], Job [id=29, keycode=职业, parameter=见习经理, fathernode=4], Job [id=30, keycode=职业, parameter=店员/收银员, fathernode=5], Job [id=31, keycode=职业, parameter=导购, fathernode=5], Job [id=32, keycode=职业, parameter=打包分拣, fathernode=6], Job [id=33, keycode=职业, parameter=物流配送, fathernode=6], Job [id=34, keycode=职业, parameter=活动协助/执行, fathernode=7], Job [id=35, keycode=职业, parameter=节目观众, fathernode=7], Job [id=36, keycode=职业, parameter=社群运营, fathernode=8], Job [id=37, keycode=职业, parameter=信息标注, fathernode=8], Job [id=38, keycode=职业, parameter=资料录入, fathernode=8], Job [id=39, keycode=职业, parameter=在线主播, fathernode=8], Job [id=40, keycode=职业, parameter=线下主播, fathernode=9], Job [id=41, keycode=职业, parameter=美工设计, fathernode=9], Job [id=42, keycode=职业, parameter=资料录入, fathernode=9], Job [id=43, keycode=职业, parameter=在线主播, fathernode=9], Job [id=44, keycode=职业, parameter=客服, fathernode=10], Job [id=45, keycode=职业, parameter=话务员, fathernode=10], Job [id=46, keycode=职业, parameter=新奇兼职, fathernode=11], Job [id=47, keycode=职业, parameter=义工旅行, fathernode=11], Job [id=48, keycode=职业, parameter=志愿者, fathernode=11], Job [id=49, keycode=职业, parameter=体验测评, fathernode=11]]
+2018-11-13 17:29:01,325 INFO (StartupInfoLogger.java:57)- Started RecruitApplication in 23.965 seconds (JVM running for 25.106)
+2018-11-13 17:31:14,369 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_baseinfoMapper]: 0.0
+2018-11-13 17:31:14,370 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_baseinfo where merchant_username=? 
+2018-11-13 17:31:14,372 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: a(String)
+2018-11-13 17:31:14,487 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-11-13 17:31:26,271 INFO (NoteAndMailController.java:41)- 发送验证码
+2018-11-13 17:31:26,272 INFO (NoteAndMailController.java:42)- 3974
+2018-11-13 17:31:57,734 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.0
+2018-11-13 17:31:57,736 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(1) from merchant_wantedjob 
+2018-11-13 17:31:57,736 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-11-13 17:31:57,906 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-11-13 17:31:57,919 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.0
+2018-11-13 17:31:57,920 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from merchant_wantedjob limit ?,? 
+2018-11-13 17:31:57,922 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 1(Integer)
+2018-11-13 17:31:57,936 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-11-13 17:32:36,469 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.3333333333333333
+2018-11-13 17:32:36,470 DEBUG (LoggingCache.java:62)- Cache Hit Ratio [com.yc.dao.Merchant_wantedjobMapper]: 0.5

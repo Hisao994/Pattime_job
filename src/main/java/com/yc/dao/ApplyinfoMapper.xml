@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yc.dao.ApplyinfoMapper">
+	<!-- 使用默认mybatis：二级缓存 -->
+	<cache eviction="FIFO" flushInterval="60000" size="512" readOnly="true"></cache>
+
+
+	<insert id="saveApplyinfo" parameterType="applyinfo">
+		insert into
+		applyinfo(stu_id,merchant_wantedjob_id,date)
+		values(#{stu_id},#{merchant_wantedjob_id},date_format(now(),'%Y-%m-%d %H:%i:%S'))
+	</insert>
+
+	<update id="cancelApplyinfo" parameterType="applyinfo">
+		update
+		applyinfo set
+		status=0 <where>
+			<if test="student_baseinfo!=null  and merchant_wantedjob!=null ">
+				stu_id =#{stu_id}		
+				and merchant_wantedjob_id =
+				#{merchant_wantedjob_id}
+			</if>
+
+			<if test="id!=null and id!=''">
+				and id = #{id}
+			</if>
+		</where>
+	</update>
+	
+	<!-- 带查询条件，分页，排序的查询 -->
+	<select id="findApplyinfoCondition" parameterType="map"
+		resultType="applyinfo">
+		select *
+		<include refid="conditionSql" />
+	</select>
+	<!-- 各种查询条件的拼接 -->
+	<sql id="conditionSql">
+		from applyinfo
+		<where>
+			<if test="stu_id!=null ">
+				stu_id =#{stu_id}
+			</if>
+			<if test="merchant_wantedjob_id!=null  ">
+				and merchant_wantedjob_id =
+				#{merchant_wantedjob_id}
+			</if>
+
+			<if test="status!=null and status!=''">
+				and status = #{status}
+			</if>
+			<if test="id!=null and id!=''">
+				and id = #{id}
+			</if>
+		</where>
+	</sql>
+
+
+	
+
+	<!-- 统计查询 -->
+	<select id="findApplyinfoConditionCount" parameterType="map"
+		resultType="Integer">
+		select count(1)
+		<include refid="conditionSql" />
+	</select>
+
+	<resultMap type="Student_baseinfo" id="stuMap">
+		<id property="stu_id" column="stu_id" />
+		<result property="stu_telephone" column="stu_telephone" />
+		<result property="stu_email" column="stu_email" />
+		<result property="stu_name" column="stu_name" />
+	</resultMap>
+
+	<resultMap type="Applyinfo" id="applyresultMap">
+		<collection property="student_baseinfo" ofType="Student_baseinfo"
+			column="stu_id" resultMap="stuMap" />
+	</resultMap>
+<!-- 根据工作列表查学生列表 -->
+	<select id="selectStudentListwithApply" parameterType="Applyinfo"
+		resultMap="applyresultMap">
+		select * from applyinfo
+		app left join student_baseinfo stu on
+		app.stu_id=stu.stu_id where
+		app.merchant_wantedjob_id =
+		#{merchant_wantedjob_id}
+	</select>
+	
+	
+	
+	
+	
+<!-- 根据学生查申请列表 -->
+	<resultMap type="Merchant_wantedjob" id="merMap">
+		<id property="merchant_wantedjob_id" column="merchant_wantedjob_id" />
+		<result property="merchant_id" column="merchant_id" />
+		<result property="job_id" column="job_id" />
+		<result property="worktime" column="worktime" />
+		<result property="title" column="title" />
+		<result property="workcontent" column="workcontent" />
+		<result property="salary" column="salary" />
+		<result property="workcleanform" column="workcleanform" />
+		<result property="workplace" column="workplace" />
+		<result property="workdescp" column="workdescp" />
+		<result property="workdemand" column="workdemand" />
+		<result property="posttime" column="posttime" />
+	</resultMap>
+	<resultMap type="Applyinfo" id="applyresultMapToStudent">
+	 <result property="id" column="id" />
+		<result property="stu_id" column="stu_id" />
+		<result property="status" column="status" />
+		<collection property="merchant_wantedjob" ofType="Merchant_wantedjob"
+			column="merchant_wantedjob_id" resultMap="merMap" />
+	   
+	</resultMap>
+	
+	
+	<!-- 根据工作列表查学生列表 -->
+	<select id="selectJobListwithApply" parameterType="Applyinfo"
+			resultMap="applyresultMapToStudent">
+		select * from applyinfo
+		app left join merchant_wantedjob mer on
+		app.merchant_wantedjob_id=mer.merchant_wantedjob_id where
+		app.stu_id =
+		#{stu_id}
+	</select>
+
+</mapper>
