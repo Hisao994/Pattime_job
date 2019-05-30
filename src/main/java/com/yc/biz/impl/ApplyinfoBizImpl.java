@@ -59,7 +59,12 @@ public class ApplyinfoBizImpl implements ApplyinfoBiz {
 
 	@Override
 	public List<Applyinfo> selectJobWithApply(Applyinfo applyinfo) {
-		
+
 		return baseDao.findAll(applyinfo, "selectJobListwithApply");
+	}
+
+	@Override
+	public int updateStudentStatus(Applyinfo applyinfo) {
+		return baseDao.update(applyinfo, "updateStudentStatus");
 	}
 }

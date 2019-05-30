@@ -14,23 +14,22 @@
 <script type="text/javascript" src="js/jquery.validate.extend.js"></script>
 </head>
 <body>
-  <div id="img">
-    <img src="img/3.png" id="i1" style="width: 70px; height: 70px;" />
-    <ul>
-      <li>
-        <a href="index.jsp" style="color: rgb(0, 204, 136);">首页</a>
-      </li>
-      <!-- <li>
-        <a href="">找兼职</a>
-      </li>
-      <li>
-        <a href="">小任务</a>
-      </li> -->
-      <li>
-        <div id="d1">
-          <a href="" style="margin-left: 30px;">登录</a>
-        </div>
-      </li>
-    </ul>
-    <p id="p1">大学生</p>
-    <span id="s1">兼职招聘平台</span>
+	<div id="img">
+		<img src="img/3.png" id="i1" style="width: 70px; height: 70px;" />
+		<ul>
+			<li>
+				<a href="index.jsp" style="color: rgb(0, 204, 136);">首页</a>
+			</li>
+
+			<li>
+				<div id="d1">
+					<a href="" style="margin-left: 30px;">登录</a>
+				</div>
+			</li>
+
+			<li>
+				<a href="" style="margin-left: 30px;">忘记密码</a>
+			</li>
+		</ul>
+		<p id="p1">大学生</p>
+		<span id="s1">兼职招聘平台</span>

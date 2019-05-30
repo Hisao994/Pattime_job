@@ -24,7 +24,6 @@ public class MerchantBizImpl implements MerchantBiz {
 	@Resource(name = "baseDaoImpl")
 	private BaseDao baseDao;
 
-
 	/*
 	 * (non-Javadoc)判断用户是否存在
 	 * 
@@ -151,29 +150,27 @@ public class MerchantBizImpl implements MerchantBiz {
 	 * java.util.Map)
 	 */
 	@Override
-	public JsonModel<Merchant_wantedjob> findAllWantedJob( Map map) {
+	public JsonModel<Merchant_wantedjob> findAllWantedJob(Map map) {
 		JsonModel<Merchant_wantedjob> jsonModel = new JsonModel<Merchant_wantedjob>();
 		int pages = (int) map.get("pages");
 		int pageSize = (int) map.get("pageSize");
-		int count = baseDao.getCount(Merchant_wantedjob.class,map, "findWantedjobConditionCount");
-		int total = count % pageSize == 0 ? count / pageSize : count / pageSize
-				+ 1;
+		int count = baseDao.getCount(Merchant_wantedjob.class, map, "findWantedjobConditionCount");
+		int total = count % pageSize == 0 ? count / pageSize : count / pageSize + 1;
 		int start = (pages - 1) * pageSize;
 		map.put("start", start);
 		map.put("pageSize", pageSize);
-		List<Merchant_wantedjob> list = baseDao.findAll(Merchant_wantedjob.class, "selectWantedjobCondition",map);
+		List<Merchant_wantedjob> list = baseDao.findAll(Merchant_wantedjob.class, "selectWantedjobCondition", map);
 		jsonModel.setTotal(total);
-		
+
 		jsonModel.setRows(list);
 		jsonModel.setTotal(total);
 		jsonModel.setPages(pages);
 		jsonModel.setPageSize(pageSize);
 		return jsonModel;
 	}
-	
+
 	@Override
-	public List<Map<String, Object>> findAllList(
-			Class<Merchant_baseinfo> Merchant_baseinfo, Map<String, Object> map) {
+	public List<Map<String, Object>> findAllList(Class<Merchant_baseinfo> Merchant_baseinfo, Map<String, Object> map) {
 		List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
 		Map<String, Object> returnmap = new HashMap<String, Object>();
 		int totalPages = (int) baseDao.getFunc1(Merchant_baseinfo, "getAllMerchantListTotal");
@@ -187,12 +184,23 @@ public class MerchantBizImpl implements MerchantBiz {
 	@Override
 	public int setPower(Merchant_baseinfo merchant_baseinfo) {
 		merchant_baseinfo = (Merchant_baseinfo) baseDao.findOne(merchant_baseinfo, "getMerchantbaseinfo");
-		if(merchant_baseinfo.getPower()==0){
+		if (merchant_baseinfo.getPower() == 0) {
 			merchant_baseinfo.setPower(1);
-		}else if(merchant_baseinfo.getPower()==1){
+		} else if (merchant_baseinfo.getPower() == 1) {
 			merchant_baseinfo.setPower(0);
 		}
 		return baseDao.update(merchant_baseinfo, "setMerchantPower");
+	}
+
+	@Override
+	public int downWantedJob(Merchant_wantedjob mwJob) {
+
+		return baseDao.down(mwJob, "downWantedjob");
+	}
+
+	@Override
+	public int updatePwd(Merchant_baseinfo merchant_baseinfo) {
+		return baseDao.update(merchant_baseinfo, "updatePwd");
 	}
 
 }

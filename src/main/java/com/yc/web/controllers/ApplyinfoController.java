@@ -39,7 +39,7 @@ public class ApplyinfoController {
 	@ApiImplicitParam(name = "applyinfo", value = "applyinfo", required = true, dataType = "Applyinfo")
 	@RequestMapping("save_applyinfo.action")
 	@ResponseBody
-	public JsonModel save_applyinfo(Applyinfo applyinfo,HttpSession session) {
+	public JsonModel save_applyinfo(Applyinfo applyinfo, HttpSession session) {
 		Student_baseinfo s = (Student_baseinfo) session.getAttribute("Student");
 		applyinfo.setStu_id(s.getStu_id());
 		List<Applyinfo> isexist = applyinfoBiz.getApplyinfo(applyinfo);
@@ -69,6 +69,7 @@ public class ApplyinfoController {
 
 		List<Applyinfo> list = applyinfoBiz.getApplyinfo(applyinfo);
 		if (list != null && list.size() > 0) {
+			applyinfoBiz.updateStudentStatus(applyinfo);
 			jsonModel.setCode(1);
 			jsonModel.setObj(list);
 		} else {
@@ -87,6 +88,7 @@ public class ApplyinfoController {
 
 		List<Applyinfo> list = applyinfoBiz.seleStudentLsit(applyinfo);
 		if (list != null && list.size() > 0) {
+			applyinfoBiz.updateStudentStatus(applyinfo);
 			jsonModel.setCode(1);
 			jsonModel.setObj(list);
 		} else {

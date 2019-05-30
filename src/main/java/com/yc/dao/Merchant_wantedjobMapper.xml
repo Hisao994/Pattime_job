@@ -24,7 +24,8 @@
 		insert into
 		merchant_wantedjob(merchant_id,salary,job_id,title,
 		workplace,workdescp,workcleanform,workdemand,workcontent,posttime,power)
-		values(#{merchant_id},#{salary},#{job_id},#{title},#{workplace},#{workdescp},#{workcleanform},#{workdemand},#{workcontent},date_format(now(),'%Y-%c-%e %k:%i'),1)
+		values(#{merchant_id},#{salary},#{job_id},#{title},#{workplace},#{workdescp},#{workcleanform},#{workdemand},#{workcontent},date_format(now(),'%Y-%c-%e
+		%k:%i'),1)
 	</insert>
 
 	<!-- 更新商家发布信息 -->
@@ -44,7 +45,7 @@
 		select merchant_wantedjob_id, title,posttime from
 		merchant_wantedjob
 		where
-		merchant_id=#{merchant_id}
+		merchant_id=#{merchant_id} and power=1
 	</select>
 
 	<!-- 各种查询条件的拼接 -->
@@ -75,11 +76,11 @@
 	</sql>
 
 	<!-- 分页的拼接条件 -->
-  <sql id="pageSql">
-    <if test="start!=null and pageSize!=null">
-      limit #{start},#{pageSize}
-    </if>
-  </sql>
+	<sql id="pageSql">
+		<if test="start!=null and pageSize!=null">
+			limit #{start},#{pageSize}
+		</if>
+	</sql>
 
 	<!-- 查询带分页，排序的条件 -->
 	<select id="selectWantedjobCondition" parameterType="Map"
@@ -89,8 +90,16 @@
 		<include refid="orderSql" />
 		<include refid="pageSql" />
 	</select>
-<!-- 统计查询 -->
-  <select id="findWantedjobConditionCount" parameterType="map" resultType="Integer">
-    select count(1) <include refid="conditionSql"/>
-  </select>
+	<!-- 统计查询 -->
+	<select id="findWantedjobConditionCount" parameterType="map"
+		resultType="Integer">
+		select count(1)
+		<include refid="conditionSql" />
+	</select>
+
+	<update id="downWantedjob" parameterType="Merchant_wantedjob">
+		update
+		merchant_wantedjob set power=0 where
+		merchant_wantedjob_id=#{merchant_wantedjob_id}
+	</update>
 </mapper>

@@ -167,4 +167,9 @@ public class BaseDaoImpl<T> implements BaseDao<T> {
 	public int getFunc1(Class<T> clazz, String sqlId, Map<String, Object> parameterMap) {
 		return sqlSession.selectOne(mapperPath + clazz.getSimpleName() + "Mapper." + sqlId, parameterMap);
 	}
+
+	@Override
+	public int down(T t, String sqlId) {
+		return sqlSession.update(mapperPath + t.getClass().getSimpleName() + "Mapper." + sqlId, t);
+	}
 }

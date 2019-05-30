@@ -111,7 +111,11 @@ function showList(id) {
 												+ list[i].merchant_wantedjob_id
 												+ ")'></td><td><input type='button' value='查看招聘结果' onclick='toshowstudentlist("
 												+ list[i].merchant_wantedjob_id
-												+ ")'/></td></tr>");
+												+ ")'/></td>"
+												+ "<td><input type='button' value='下架' onclick='todown("
+												+ list[i].merchant_wantedjob_id
+												+ ")'</td></tr>");
+
 					}
 				}
 			});
@@ -122,7 +126,6 @@ function toshowdetail(id) {
 }
 var count = 0;
 function toshowstudentlist(id) {
-
 	count = 0;
 	merchant_wantedjob_id = id;
 	$
@@ -153,7 +156,6 @@ function toshowstudentlist(id) {
 			});
 }
 function sendEmail(email, id) {
-
 	$.ajax({
 		url : "sendEmail.action",
 		data : {
@@ -225,5 +227,19 @@ function openProfession(para) {
 					}
 				}
 			});
+}
 
+function todown(param) {
+	$.ajax({
+		url : "todown.action",
+		method : "POST",
+		dataType : "JSON",
+		data : "merchant_wantedjob_id=" + param,
+		success : function(data) {
+			if (data.code == 1) {
+				alert(data.msg + "...跳完前一页");
+				window.location.href = "merchant.jsp";
+			}
+		}
+	});
 }

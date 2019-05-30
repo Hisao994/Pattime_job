@@ -107,4 +107,8 @@
   <update id="setMerchantPower" parameterType="Merchant_baseinfo">
     update merchant_baseinfo set power=#{power} where merchant_id=#{merchant_id}
   </update>
+  
+  <update id="updatePwd" parameterType="Merchant_baseinfo">
+    update merchant_baseinfo set merchant_password=#{merchant_password} where merchant_telephone=#{merchant_telephone}
+  </update>
 </mapper>

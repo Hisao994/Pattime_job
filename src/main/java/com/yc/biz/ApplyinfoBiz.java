@@ -5,8 +5,7 @@ import java.util.List;
 import com.yc.bean.Applyinfo;
 
 public interface ApplyinfoBiz {
-	
-	
+
 	/**
 	 * 根据条件某个的信息
 	 * 
@@ -14,6 +13,7 @@ public interface ApplyinfoBiz {
 	 * @return
 	 */
 	public List<Applyinfo> selectJobWithApply(Applyinfo applyinfo);
+
 	/**
 	 * 根据条件某个的信息
 	 * 
@@ -44,6 +44,7 @@ public interface ApplyinfoBiz {
 	 * @return
 	 */
 	public boolean delApplyinfo(Applyinfo applyinfo);
+
 	/**
 	 * 更新
 	 * 
@@ -59,5 +60,7 @@ public interface ApplyinfoBiz {
 	 * @return
 	 */
 	public List<Applyinfo> seleStudentLsit(Applyinfo applyinfo);
+
+	public int updateStudentStatus(Applyinfo applyinfo);
 
 }

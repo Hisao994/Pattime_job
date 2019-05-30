@@ -48,6 +48,8 @@ public interface BaseDao<T> {
 
 	public int update(Class<T> clazz, String sqlId, List<T> list);
 
+	public int down(T t, String sqlId);
+
 	/**
 	 * 删除对象
 	 * 
@@ -145,10 +147,11 @@ public interface BaseDao<T> {
 	public double getFunc(T t, String sqlId);
 
 	public double getFunc(Class<T> clazz, String sqlId, Map<String, Object> map);
-	
-	public int getFunc1(Class<T> clazz,String sqlId);
-	
-	public int getFunc1(T t,String sqlId);
-	
-	public int getFunc1(Class<T> clazz,String sqlId,Map<String,Object> map);
+
+	public int getFunc1(Class<T> clazz, String sqlId);
+
+	public int getFunc1(T t, String sqlId);
+
+	public int getFunc1(Class<T> clazz, String sqlId, Map<String, Object> map);
+
 }

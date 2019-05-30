@@ -85,6 +85,24 @@ public class MerchantControllers {
 		}
 		return mad;
 	}
+	
+	@ResponseBody
+	@PostMapping("/addMerchant_baseInfo.action")
+	public JsonModel updateUserPwd(Merchant_baseinfo mbInfo, HttpSession session) {
+		String username = mbInfo.getMerchant_username();
+		String password = mbInfo.getMerchant_password();
+		String encryptPwd = Encrypt.md5AndSha2(password);
+		mbInfo.setMerchant_telephone(username);
+		mbInfo.setMerchant_password(encryptPwd);
+		int ok = mb.updatePwd(mbInfo);
+		if (ok==1) {
+			jm.setCode(1);
+			jm.setMsg("修改成功");
+		} else {
+			jm.setCode(0);
+		}
+		return jm;
+	}
 
 	@ApiOperation(value = "商家注册", notes = "商家注册2")
 	// name–参数名 value–参数说明 required–是否必填 dataType–重写属性类型
@@ -92,7 +110,6 @@ public class MerchantControllers {
 	@ResponseBody
 	@PostMapping("/addMerchant_baseInfo.action")
 	public JsonModel AddMerchant_baseinfo(Merchant_baseinfo mbInfo, HttpSession session) {
-
 		boolean ok = mb.register(mbInfo);
 		if (ok) {
 			jm.setCode(1);
@@ -334,6 +351,31 @@ public class MerchantControllers {
 	}
 
 	/**
+	 * 下架招聘信息
+	 * 
+	 * @param mwJob
+	 * @param request
+	 * @return
+	 */
+	@ResponseBody
+	@PostMapping("todown.action")
+	public JsonModel toDown_wantedJOb(Merchant_wantedjob mwJob, HttpServletRequest request) {
+		try {
+			int r = mb.downWantedJob(mwJob);
+			System.out.println(r);
+			if (r > 0) {
+				jm.setCode(1);
+				jm.setMsg("下架成功");
+				// 更新缓存
+			}
+		} catch (Exception e) {
+			jm.setCode(0);
+			jm.setMsg(e.toString());
+		}
+		return jm;
+	}
+
+	/**
 	 * 查找商家自己发布的所有信息
 	 * 
 	 * @param merchant_id
@@ -513,7 +555,6 @@ public class MerchantControllers {
 			List<Merchant_wantedjob> rankList = (List<Merchant_wantedjob>) application.getAttribute("rankList");
 			rankList.add(mwJob);
 		}
-
 		return mav;
 	}
 

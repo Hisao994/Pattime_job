@@ -101,15 +101,19 @@ public interface MerchantBiz {
 	 * 待条件的查询所有的岗位信息
 	 * 
 	 */
-	public JsonModel<Merchant_wantedjob> findAllWantedJob( Map map);
-	
+	public JsonModel<Merchant_wantedjob> findAllWantedJob(Map map);
+
 	/**
 	 * 查找商家List
 	 */
 	public List<Map<String, Object>> findAllList(Class<Merchant_baseinfo> Merchant_baseinfo, Map<String, Object> map);
-	
+
 	/**
 	 * 权限管理
 	 */
 	public int setPower(Merchant_baseinfo merchant_baseinfo);
+
+	public int downWantedJob(Merchant_wantedjob mwJob);
+	
+	public int updatePwd(Merchant_baseinfo merchant_baseinfo);
 }

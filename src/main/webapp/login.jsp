@@ -57,7 +57,44 @@
         <button type="submit" class="el-button next-btn el-button--primary zhu">
           <span id="register">注册</span>
         </button>
-        </a>
+      </div>
+    </div>
+    <span style="margin-top: 10px;" onClick="dl()" class="txt dll">已有账号？立即登录</span>
+  </form>
+</div>
+
+<div id="d4" style="height: 500px; display: none;">
+  <img src="img/3.png" class="i1" style="width: 48px; height: 48px;">
+  <form class="el-form" id="regForm" action="Merchant_baseinfoReg.action" method="post">
+    <div class="el-form-item">
+      <div class="el-form-item__content">
+        <div class="el-input">
+          <input id="Merchant_username" autocomplete="off" placeholder="手机号码" type="text" id="tel" name="Merchant_username" rows="2" maxlength="11"
+            validateevent="true" class="el-input__inner"
+          >
+        </div>
+        <div class="el-input">
+              <input autocomplete="off" placeholder="密码" type="password" id="merchant_password" name="merchant_password" rows="1" validateevent="true" class="el-input__inner">
+        </div>
+      </div>
+    </div>
+    <div class="el-form-item">
+      <div class="el-form-item__content">
+        <div class="el-input">
+          <input onblur="judge(this)" autocomplete="off" placeholder="手机验证码" id="code" name="code" rows="2" validateevent="true" class="el-input__inner">
+        </div>
+        <span id="t1" onclick="sendNote()">获取验证码</span>
+        <div class="zhu">
+          <input placeholder="验证码" type="text" rows="1" name="zccode" id="zccode" maxlength="4" validateevent="true" class="el-input__inner">
+          <img src="image.jsp" onclick="changeVilidateCode(this)" style="position: relative; top: -28px; left: 55px;" />
+        </div>
+      </div>
+    </div>
+    <div class="el-form-item">
+      <div class="el-form-item__content" style="position: relative; top: -40px;">
+        <button type="button" onclick="update()" class="el-button next-btn el-button--primary zhu">
+     确定修改
+    </button>
       </div>
     </div>
     <span style="margin-top: 10px;" onClick="dl()" class="txt dll">已有账号？立即登录</span>
@@ -78,6 +115,7 @@
   </form>
   <span style="margin-top: 10px;" onClick="zc()" class="txt">立即注册商家账号</span>
   <br />
+  <span style="margin-top: 10px;" onClick="wjmm()" class="txt">忘记密码</span>
   <a style="margin-top: 10px;" href="studentlogin.jsp">我是学生</a>
 </div>
 </div>
