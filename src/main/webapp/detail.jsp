@@ -4,7 +4,7 @@
 <div id="parttimejob" class="cont_left">
 	<span class="tit">修改工作信息</span>
 	<div class="details">
-		<form id="parrtimejob">
+		<form id="parrtimejobs">
 			<input type="hidden" id="merchant_wantedjob_id" name="merchant_wantedjob_id" value="<%=request.getParameter("id")%>" />
 			<p id="txt0" class="txt1"></p>
 			<p id="txt1" class="txt1"></p>
@@ -22,15 +22,13 @@
 			<p id="P_workdemand" class="txt"></p>
 			<p id="P_workcontent" class="txt"></p>
 			<input type="button" onclick="updataworkinfo()" value="发布消息" />
+			<a id="t1" href="merchant.jsp">返回上一页</a>
 		</form>
 	</div>
-	<a id="t1" href="merchant.jsp">返回上一页</a>
+
 </div>
 
-<script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript" src="js/merchant.js"></script>
-<script type="text/javascript" src="js/school.js"></script>
-<script type="text/javascript" src="js/Allschool.js"></script>
+
 <script type="text/javascript" src="js/detail.js"></script>
 </body>
 </html>

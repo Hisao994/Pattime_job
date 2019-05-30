@@ -21,9 +21,10 @@
 	<div id="baseinfo" class="cont_left">
 		<span class="tit">基本信息</span>
 		<div class="details">
-			<form id="baseinfo" style="text-align: center"></form>
+			<form id="baseinfo" style="text-align:center"></form>
 		</div>
 	</div>
+	
 
 
 	<!-- ===========================================招聘信息====================================================== -->

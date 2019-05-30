@@ -52,7 +52,7 @@ public class InitListener implements ServletContextListener {
 			application.setAttribute("rankList", list);
 		} catch (Exception e) {
 			e.printStackTrace();
- 
+			
 			System.exit(0);
 		}
 

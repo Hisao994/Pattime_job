@@ -36,6 +36,7 @@ import com.yc.dao.RedisDao;
 import com.yc.utils.Encrypt;
 import com.yc.web.dto.JsonModel;
 import com.yc.web.listeners.InitListener;
+
 @Slf4j
 @Api(value = "/merchant", tags = "商家模块")
 @Controller
@@ -67,14 +68,14 @@ public class MerchantControllers {
 		ModelAndView mad = new ModelAndView();
 		String username = mbInfo.getMerchant_username();
 		request.setAttribute("telephone", username);
-		//sesssion中存进商家信息
+		// sesssion中存进商家信息
 		List<String> merchantLoginList = new ArrayList<String>();
 		session.setAttribute("loginuerid", mbInfo.getMerchant_id());
 		merchantLoginList.add(mbInfo.getMerchant_username());
 		String loginusername = mbInfo.getMerchant_username();
 		session.setAttribute("loginusername", loginusername);
 		session.setAttribute("merchantLoginList", merchantLoginList);
-		
+
 		if (username != null && username != "") {
 			mbInfo.setMerchant_telephone(username);
 		}
@@ -91,13 +92,13 @@ public class MerchantControllers {
 	@ResponseBody
 	@PostMapping("/addMerchant_baseInfo.action")
 	public JsonModel AddMerchant_baseinfo(Merchant_baseinfo mbInfo, HttpSession session) {
-	
-			boolean ok = mb.register(mbInfo);
-			if (ok) {
-				jm.setCode(1);
-			}else{
-				jm.setCode(0);
-			}
+
+		boolean ok = mb.register(mbInfo);
+		if (ok) {
+			jm.setCode(1);
+		} else {
+			jm.setCode(0);
+		}
 		return jm;
 	}
 
@@ -116,25 +117,29 @@ public class MerchantControllers {
 
 		mbInfo = mb.login(mbInfo);
 		if (mbInfo != null) {
-			List<String> LoginList = (List<String>) session.getAttribute("merchantLoginList");
-			if (LoginList != null && LoginList.size() > 0) {
-				for (String username1 : LoginList) {
-					if (mbInfo.getMerchant_username().equals(username1)) {
-						jm.setCode(2);
-						return jm;
+			if (mbInfo.getPower() == 0) {
+				jm.setMsg("用户已经被锁定...");
+			} else {
+				List<String> LoginList = (List<String>) session.getAttribute("merchantLoginList");
+				if (LoginList != null && LoginList.size() > 0) {
+					for (String username1 : LoginList) {
+						if (mbInfo.getMerchant_username().equals(username1)) {
+							jm.setCode(2);
+							return jm;
+						}
 					}
 				}
-			}
-			try {
-				jm.setCode(1);
-				jm.setMsg("登陆成功");
-				session.setAttribute("loginuerid", mbInfo.getMerchant_id());
-				merchantLoginList.add(mbInfo.getMerchant_username());
-				String loginusername = mbInfo.getMerchant_username();
-				session.setAttribute("loginusername", loginusername);
-				session.setAttribute("merchantLoginList", merchantLoginList);
-			} catch (Exception e) {
-				jm.setMsg("账号或密码错误");
+				try {
+					jm.setCode(1);
+					jm.setMsg("登陆成功");
+					session.setAttribute("loginuerid", mbInfo.getMerchant_id());
+					merchantLoginList.add(mbInfo.getMerchant_username());
+					String loginusername = mbInfo.getMerchant_username();
+					session.setAttribute("loginusername", loginusername);
+					session.setAttribute("merchantLoginList", merchantLoginList);
+				} catch (Exception e) {
+					jm.setMsg("账号或密码错误");
+				}
 			}
 		} else {
 			jm.setMsg("用户不存在");
@@ -173,7 +178,7 @@ public class MerchantControllers {
 		jm.setCode(1);
 		jm.setObj(mbInfo);
 		return jm;
-		
+
 	}
 
 	@ApiOperation(value = "商家基本信息更新", notes = "商家基本信息更新")
@@ -207,16 +212,74 @@ public class MerchantControllers {
 			String school) {
 		String path = province + "_" + city + "_" + school;
 		mwJob.setWorkplace(path);
-		System.out.println(province + "\t" + city + "\t" + school + "\t" );
+		jm.setCode(0);
+		/*
+		 * 判断是否含有关键字
+		 */
+
+		String workcontent = mwJob.getWorkcontent();
+		String workdemand = mwJob.getWorkdemand();
+		String workdescp = mwJob.getWorkdescp();
+
+		String[] zanghua = { "傻逼", "操你妈", "操你" };
+
+		int len = workcontent.length();
+		String inputboxxx = null;
+		for (int i = 0; i < len; i++) {
+			if (i + 2 > len) {
+				inputboxxx = workcontent.substring(i, len - 1);
+			} else {
+				inputboxxx = workcontent.substring(i, i + 2);
+			}
+			for (int k = 0; k < zanghua.length; k++) {
+				if (inputboxxx.equals(zanghua[k])) {
+					jm.setMsg("发布失败，含有非法字符");
+					return jm;
+				}
+			}
+		}
+
+		len = workdemand.length();
+		inputboxxx = null;
+		for (int i = 0; i < len; i++) {
+			if (i + 2 > len) {
+				inputboxxx = workdemand.substring(i, len - 1);
+			} else {
+				inputboxxx = workdemand.substring(i, i + 2);
+			}
+			for (int k = 0; k < zanghua.length; k++) {
+				if (inputboxxx.equals(zanghua[k])) {
+					jm.setMsg("发布失败，含有非法字符");
+					return jm;
+				}
+			}
+		}
+
+		len = workdescp.length();
+		inputboxxx = null;
+		for (int i = 0; i < len; i++) {
+			if (i + 2 > len) {
+				inputboxxx = workdescp.substring(i, len - 1);
+			} else {
+				inputboxxx = workdescp.substring(i, i + 2);
+			}
+			for (int k = 0; k < zanghua.length; k++) {
+				if (inputboxxx.equals(zanghua[k])) {
+					jm.setMsg("发布失败，含有非法字符");
+					return jm;
+				}
+			}
+		}
+
 		try {
 			int r = mb.insertMwjob(mwJob);
 			if (r > 0) {
 				jm.setCode(1);
 				jm.setMsg("发布成功");
-				//更新缓存
-//				InitListener init=new InitListener();
-//				init.cache();
-				redisDao.addCount("JobRank", mwJob.getMerchant_wantedjob_id()+"");
+				// 更新缓存
+				// InitListener init=new InitListener();
+				// init.cache();
+				redisDao.addCount("JobRank", mwJob.getMerchant_wantedjob_id() + "");
 				double num = redisDao.getValue("JobRank", mwJob.getMerchant_wantedjob_id() + "");
 				if (num <= 1) {
 					// 将数据存到排行榜list中，避免查询数据库
@@ -252,16 +315,16 @@ public class MerchantControllers {
 	// name–参数名 value–参数说明 required–是否必填 dataType–重写属性类型
 	@ApiImplicitParam(name = "merchant_baseinfo", value = "Merchant_baseinfo", dataType = "Merchant_baseinfo")
 	@ResponseBody
-	@PostMapping("user/updateMerchant_wantedJob.action")
+	@PostMapping("updateMerchant_wantedJob.action")
 	public JsonModel UpdateMerchant_wantedJob(Merchant_wantedjob mwJob, HttpServletRequest request) {
 		try {
 			int r = mb.updateWantedjob(mwJob);
+			System.out.println(r);
 			if (r > 0) {
 				jm.setCode(1);
 				jm.setMsg("更新成功");
-				//更新缓存
-				InitListener init=new InitListener();
-				init.cache();
+				// 更新缓存
+
 			}
 		} catch (Exception e) {
 			jm.setCode(0);
@@ -361,7 +424,7 @@ public class MerchantControllers {
 	@ApiImplicitParam(name = "merchant_baseinfo", value = "Merchant_baseinfo", dataType = "Merchant_baseinfo")
 	@GetMapping("/findJobList.action")
 	public ModelAndView ListJob(HttpServletRequest request, HttpSession session, Integer pages, Integer pageSize,
-			Merchant_wantedjob mwJob,String orderby) {
+			Merchant_wantedjob mwJob, String orderby) {
 		Map<String, Object> map = new HashMap<String, Object>();
 		ModelAndView mav = new ModelAndView();
 		map.put("job_id", mwJob.getJob_id());
@@ -369,7 +432,7 @@ public class MerchantControllers {
 		map.put("pages", pages);
 		map.put("pageSize", pageSize);
 		map.put("workplace", mwJob.getWorkplace());
-		if(orderby!=null  && orderby!=""){
+		if (orderby != null && orderby != "") {
 			map.put("orderby", orderby);
 		}
 		JsonModel<Merchant_wantedjob> list = mb.findAllWantedJob(map);

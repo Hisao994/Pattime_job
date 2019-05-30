@@ -66,7 +66,7 @@ public class AdminController {
 						jm.setCode(0);
 						jm.setMsg("该用户已经登陆");
 					} else {
-						admin.setAdmin_password(Encrypt.md5(admin.getAdmin_password())); 
+						admin.setAdmin_password(Encrypt.md5AndSha2(admin.getAdmin_password())); 
 						admin = adminBiz.login(admin);
 						if (admin != null) {
 							//存ip
@@ -105,7 +105,7 @@ public class AdminController {
 					}
 				}
 			} else {
-				admin.setAdmin_password(Encrypt.md5(admin.getAdmin_password()));
+				admin.setAdmin_password(Encrypt.md5AndSha2(admin.getAdmin_password()));
 				admin = adminBiz.login(admin);
 				if (admin != null) {
 					String ipString = request.getHeader("x-forwarded-for");
@@ -152,7 +152,7 @@ public class AdminController {
 			if (!r) {
 				boolean re;
 				try {
-					user.setAdmin_password(Encrypt.md5(user.getAdmin_password()));
+					user.setAdmin_password(Encrypt.md5AndSha2(user.getAdmin_password()));
 					re = adminBiz.reg(user);
 					if (re) {
 						jm.setCode(1);
@@ -176,12 +176,12 @@ public class AdminController {
 	@ResponseBody
 	public JsonModel update(JsonModel jm, Admin user, HttpSession session) {
 		
-			user.setAdmin_oldpassword(Encrypt.md5(user.getAdmin_oldpassword()));
+			user.setAdmin_oldpassword(Encrypt.md5AndSha2(user.getAdmin_oldpassword()));
 			int r =   adminBiz.updatePwd(user);
 			if (r==1) {
 				int re;
 				try {
-					user.setAdmin_password(Encrypt.md5(user.getAdmin_password()));
+					user.setAdmin_password(Encrypt.md5AndSha2(user.getAdmin_password()));
 					re = (int)adminBiz.update(user);
 					if (re==1) {
 						jm.setCode(1);
@@ -260,7 +260,7 @@ public class AdminController {
 		session.setAttribute("adminList", adminList);
 		session.removeAttribute("admin_username");
 		session.invalidate();
-		return "Administrator/Login";
+		return "Administrator/AdminLogin";
 	}
 	
 	@RequestMapping("/Administrator/Admin_del.action")

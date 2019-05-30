@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.yc.bean.Applyinfo;
+import com.yc.bean.Student_baseinfo;
 import com.yc.bean.Student_wantedjob;
 import com.yc.biz.ApplyinfoBiz;
 import com.yc.biz.StudentjobBiz;
@@ -90,9 +91,9 @@ public class StudentjobControllers {
 	  @RequestMapping("findApplyJob.action")
 	  public JsonModel Applyjob(HttpServletRequest request,HttpSession session){
 		  JsonModel jm=new JsonModel();
-		  int stu_id=(int) session.getAttribute("stu_id");
+		  Student_baseinfo s=(Student_baseinfo) session.getAttribute("Student");
 		  Applyinfo applyinfo=new Applyinfo();
-		  applyinfo.setStu_id(stu_id);
+		  applyinfo.setStu_id(s.getStu_id());
 		  List<Applyinfo> list=applyinfoBiz.selectJobWithApply(applyinfo);
 			if(list.size()>0&&list!=null){
 				 jm.setCode(1);

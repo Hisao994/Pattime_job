@@ -9,8 +9,8 @@ $(function() {
 			var mwJob = data.obj;
 			var workclean = mwJob.workcleanform;
 			$("#txt0").html(
-					"标题：<input type='text'  name='title' value='"
-					+ mwJob.title + "'/>");
+					"标题：<input type='text'  name='title' value='" + mwJob.title
+							+ "'/>");
 			$("#txt1").html(
 					"工资：<input type='text'  name='salary' value='"
 							+ mwJob.salary + "'/>");
@@ -23,7 +23,7 @@ $(function() {
 							+ mwJob.workdescp + " </textarea>");
 
 			$("#P_workdemand").html(
-					"工作内容:<textarea id='workdemand' name='workdemand' >"
+					"工作要求:<textarea id='workdemand' name='workdemand' >"
 							+ mwJob.workdemand + " </textarea>");
 
 			$("#P_workcontent").html(
@@ -36,7 +36,7 @@ $(function() {
 function updataworkinfo() {
 	$.ajax({
 		url : "updateMerchant_wantedJob.action",
-		data : $("#parrtimejob").serialize(),
+		data : $("#parrtimejobs").serialize(),
 		dataType : "JSON",
 		method : "POST",
 		success : function(data) {

@@ -31,7 +31,7 @@
 	<update id="UpdateMerchantwantedjob" parameterType="Merchant_wantedjob">
 		update
 		merchant_wantedjob set title=#{title},
-		salary=#{salary},
+		salary=#{salary}
 		,workdescp=#{workdescp},workcleanform=#{workcleanform},workdemand=#{workdemand},workcontent=#{workcontent}
 		where
 		merchant_wantedjob_id=#{merchant_wantedjob_id}

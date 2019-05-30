@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="css/index.css" />
 <div id="header">
 	<div class="header-m">
-		<img src="img/logo.png" id="i1" style="width: 70px; height: 70px;">
+		<img src="img/3.png" id="i1" style="width: 70px; height: 70px;">
 		
 		<div id="nav">
 			<a href="">首页</a>

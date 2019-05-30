@@ -109,7 +109,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<resultMap type="Applyinfo" id="applyresultMapToStudent">
 	 <result property="id" column="id" />
 		<result property="stu_id" column="stu_id" />
-		<result property="status" column="status" />
+    <result property="status" column="status" />
+    <result property="date" column="date" />
 		<collection property="merchant_wantedjob" ofType="Merchant_wantedjob"
 			column="merchant_wantedjob_id" resultMap="merMap" />
 	   

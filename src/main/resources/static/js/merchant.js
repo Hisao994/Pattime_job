@@ -1,11 +1,10 @@
 var stu_id;
 var merchant_wantedjob_id;
 
-//选择职位分类
+// 选择职位分类
 var minJobid = 0;
 var maxJobid = 0;
 var Jobid;
-
 
 $(function() {
 	$(".message .button").click(function() {
@@ -27,29 +26,29 @@ function tochangeBaseinfo(Merchant_username) {
 					str = "<input  type='hidden' id='merchant_id' name='merchant_id' value='"
 							+ baseinfo.merchant_id
 							+ "'/>"
-							+ "<p>店名:<input name='merchant_name' id='merchant_name' value="
+							+ "<p>店名:<input name='merchant_name' id='merchant_name' value='"
 							+ baseinfo.merchant_name
-							+ "   validateevent='true' class='el-input__inner'/></p><br />";
+							+ "'   validateevent='true' class='el-input__inner'/></p><br />";
 
-					str += "<p>店主：<input name='merchant_hostname' id='merchant_hostname'  value="
+					str += "<p>店主名：<input name='merchant_hostname' id='merchant_hostname'  value='"
 							+ baseinfo.merchant_hostname
-							+ "   validateevent='true' class='el-input__inner'/></p><br />";
+							+ "'   validateevent='true' class='el-input__inner'/></p><br />";
 
-					str += "<p>店主身份证：<input name='merchant_idcard' id='merchant_idcard' value="
+					str += "<p>店主身份证：<input name='merchant_idcard' id='merchant_idcard' value='"
 							+ baseinfo.merchant_idcard
-							+ "   validateevent='true' class='el-input__inner'></p><br />";
+							+ "'   validateevent='true' class='el-input__inner'></p><br />";
 
-					str += "<p>店主电话：<input name='merchant_telephone' id='merchant_telephone' value="
+					str += "<p>店主电话：<input name='merchant_telephone' id='merchant_telephone' value='"
 							+ baseinfo.merchant_telephone
-							+ "   validateevent='true' class='el-input__inner'/></p><br />";
+							+ "'   validateevent='true' class='el-input__inner'/></p><br />";
 
-					str += "<p>店主Email：<input name='merchant_email' id='merchant_email' value="
+					str += "<p>店主Email：<input name='merchant_email' id='merchant_email' value='"
 							+ baseinfo.merchant_email
-							+ "   validateevent='true' class='el-input__inner/'></p><br />";
+							+ "'   validateevent='true' class='el-input__inner/'></p><br />";
 
-					str += "<p>店家营业执照：<input name='merchant_license' id='merchant_license' value="
+					str += "<p>店家营业执照：<input name='merchant_license' id='merchant_license' value='"
 							+ baseinfo.merchant_license
-							+ "   validateevent='true' class='el-input__inner'/></p><br />";
+							+ "'   validateevent='true' class='el-input__inner'/></p><br />";
 
 					str += "<input type='button' onclick='changabaseinfo()' value='修改'/>";
 					$("#baseinfo").html(str);
@@ -74,7 +73,7 @@ function changabaseinfo() {
 }
 
 function postJobInfo() {
-	document.getElementById("job_id").value=Jobid;
+	document.getElementById("job_id").value = Jobid;
 	$.ajax({
 		url : "user/addMerchant_wantedJob.action",
 		data : $("#parrtimejob").serialize(),
@@ -121,10 +120,10 @@ function showList(id) {
 function toshowdetail(id) {
 	window.location.href = "detail.jsp?id=" + id;
 }
-var count=0;
+var count = 0;
 function toshowstudentlist(id) {
-	
-	count=0;
+
+	count = 0;
 	merchant_wantedjob_id = id;
 	$
 			.ajax({
@@ -142,16 +141,19 @@ function toshowstudentlist(id) {
 											"<tr  ><td > 学生："
 													+ data.obj[i].student_baseinfo.stu_name
 													+ "</td><td><input type='button' value='邮件通知' onclick='sendEmail("
-													+ data.obj[i].student_baseinfo.stu_email+","+data.obj[i].student_baseinfo.stu_id
+													+ data.obj[i].student_baseinfo.stu_email
+													+ ","
+													+ data.obj[i].student_baseinfo.stu_id
 													+ " )'</td></tr>");
 						}
-						$("#showStudent").append("<div id='count'class='signup'>当前已通知0人</div>");
+						$("#showStudent").append(
+								"<div id='count'class='signup'>当前已通知0人</div>");
 					}
 				}
 			});
 }
-function sendEmail(email,id) {
-	
+function sendEmail(email, id) {
+
 	$.ajax({
 		url : "sendEmail.action",
 		data : {
@@ -164,19 +166,16 @@ function sendEmail(email,id) {
 		success : function(data) {
 			if (data.code == 1) {
 				alert("已通知该同学");
-				count=count+1;
-				$("#count").html("当前已通知"+count+"人");
+				count = count + 1;
+				$("#count").html("当前已通知" + count + "人");
 			}
 		}
 	});
 }
 
-
-
-
 function change(para) {
-//	var job_id = document.getElementById("job_id");
-//	job_id.value = para;
+	// var job_id = document.getElementById("job_id");
+	// job_id.value = para;
 	Jobid = para;
 	if (para == 0) {
 		Jobid = null;
@@ -193,9 +192,9 @@ function change(para) {
 		}
 	}
 	openProfession(para);
-	
+
 	document.getElementById("job_id" + para).style.color = "#0C8";
-	
+
 }
 
 function openProfession(para) {
