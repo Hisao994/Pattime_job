@@ -24,7 +24,7 @@ public class BaseDaoImpl<T> implements BaseDao<T> {
 
 	@Override
 	public int save(Class<T> clazz, String sqlId, Map<String, Object> parameterMap) {
-		return sqlSession.insert(mapperPath + clazz.getSimpleName() + "Mapper." + sqlId, parameterMap);
+		return sqlSession.insert(mapperPath + clazz.getSimpleName() + "Ma123pper." + sqlId, parameterMap);
 	}
 
 	@Override
